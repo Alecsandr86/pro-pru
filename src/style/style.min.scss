@@ -1,0 +1,465 @@
+/********************************
+*      ДОПОЛНИТЕЛЬНЫЕ СТИЛИ
+*********************************/
+@import "../../bower_components/normalize.css/normalize.css";
+@import "../../bower_components/animate.css/animate.min.css";
+@import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../../bower_components/bourbon/app/assets/stylesheets/bourbon-deprecated-upcoming";
+
+@import "partials/sprite";
+
+@include sprites($spritesheet-sprites);
+
+
+
+//hover спрайта
+
+
+
+
+
+
+@include font-face("pt_sansregular", "../fonts/PT_Sans");
+@include font-face("pt_sansbold", "../fonts/PT_Sans_Bold");
+@include font-face("pt_sans_captionbold", "../fonts/PTC75F");
+
+
+
+
+
+// Переменые
+
+$em-base: 13px;
+$white:#ffffff;
+$color-black: #000000;
+$color-text: #383838;
+$color-astsent:#ef3b08;
+$ff-ptr: "pt_sansregular";
+$ff-ptb: "pt_sansbold";
+$ff-ptcb: "pt_sans_captionbold";
+
+// \\\ Переменые \\\
+
+
+.lebles{
+  @include sprite($lebles);
+  &:hover {
+    @include sprite($lebles-hover);
+    color: $color-astsent;
+  }
+}
+
+
+
+*{
+  @include box-sizing(border-box);
+}
+.animat{
+  @include transition(all 0.5s $ease-out-cubic);
+}
+
+
+
+
+
+
+
+
+
+html{
+  font-size:$em-base;
+}
+
+body{
+  color: $color-text;
+  font-family: $arial;
+  background-color: #ededed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong{
+  font-family:$ff-ptb;
+}
+i{
+  display: inline-block;
+}
+ul{
+  padding:0;
+  margin:0;
+  list-style-type: none;
+}
+p{
+  margin:10px 0;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+
+.both:after {
+  clear: both;
+  content: "";
+  display: block;
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+.cr{
+  float: none;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  font-size: 0.1px;
+  display: block;
+}
+
+/********************************
+*       ОСНОВНЫЕ СТИЛИ
+********************************/
+
+.wrapper-fluid{
+  //overflow: hidden;
+}
+.wrapper{
+  width:1200px;
+  margin:0 auto;
+}
+
+
+// КОНТЕНТ
+
+
+header{
+
+}
+.top-header{
+  background-color: #d9dce1;
+  padding: 9px 0px;
+}
+
+
+.social-network{
+  li{
+    display: inline-block;
+    vertical-align: middle;
+    margin:0 7px;
+  }
+  a{
+    display: inline-block;
+    color: #577290;
+    font-size:12px;
+    vertical-align: middle;
+    text-decoration: none;
+  }
+  i{
+    vertical-align: middle;
+    margin:0 5px 0 0;
+  }
+}
+
+.header-contact{
+  padding: 25px 0 37px;
+}
+
+.logo-cont{
+  width:425px;
+}
+
+.contacts-top{
+  width:490px;
+  padding:24px 0 0;
+  i{
+    margin: 5px 0 0 6px;
+  }
+  ul{
+    margin:5px 0 0 ;
+    li{
+      font-size: 14px;
+      font-family:$ff-ptr;
+      b{
+        font-family:$ff-ptb;
+      }
+    }
+  }
+}
+.phone-b{
+  width:200px;
+  margin: 0 4px 0 26px;
+  p{
+    margin:0;
+    float: left;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family:$ff-ptr;
+    span{
+      color: $color-astsent;
+    }
+  }
+}
+
+.basket{
+  text-align: center;
+  padding: 23px 0 0;
+  span{
+    display: inline-block;
+    text-align: center;
+    line-height: 59px;
+    color: $white;
+  }
+  a{
+    text-transform: uppercase;
+    font-family:$ff-ptr;
+    text-decoration: none;
+    color: $color-text;
+    display: block;
+    padding: 5px 0 0 29px;
+  }
+}
+
+.nav{
+  background-color: #373737;
+
+}
+
+.nav-big{
+  ul{
+    margin:0;
+  }
+  li{
+    display: inline-block;
+    float: left;
+    margin:0 1px 0 0;
+    vertical-align: middle;
+  }
+  a{
+    display: inline-block;
+    color: $white;
+    font-size:16px;
+    font-family:$ff-ptr;
+    width:160px;
+    height: 53px;
+    line-height: 32px;
+    background:#6f6f6f url('../images/nav-big-bg.png') 0 0 repeat-x;
+    vertical-align: middle;
+    text-decoration: none;
+    padding:11px 14px;
+    @include transition(all 0.5s $ease-out-cubic);
+    &:hover{
+      background:#e43201 url('../images/nav-big-bg-hover.png') 0 0 repeat-x;
+    }
+  }
+  i{
+    vertical-align: middle;
+    margin:0 10px 0 0;
+  }
+}
+.nav-mini{
+  ul{
+  }
+  li{
+    display: inline-block;
+    margin:0 13px;
+  }
+  a{
+    display: inline-block;
+    color: $white;
+    font-size:16px;
+    font-family:$ff-ptr;
+    padding: 18px 0 14px;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+.box-bg{
+  background: url('../images/box-bootum.png') 0 100% repeat-x;
+  min-height: 397px;
+}
+
+.nav-mega{
+  text-align: center;
+  padding: 10px 0;
+  .item{
+    display: inline-block;
+    width:230px;
+    position: relative;
+    color: $white;
+    font-family:$ff-ptcb;
+    font-size:18px;
+    height:310px;
+    margin: 0 2px;
+    &:before{
+      content: '';
+      width:100%;
+      background: url('../images/nav-mega-shadow.png') 0 0 no-repeat;
+      height: 25px;
+      position: absolute;
+      bottom:-24px;
+      left:0;
+    }
+    img{
+      width:100%;
+      height:100%;
+    }
+    strong{
+      position: absolute;
+      top: 12px;
+      letter-spacing: 1px;
+      left:0;
+      right:0;
+      font-size: 24px;
+    }
+    .footer{
+      position: absolute;
+      left:0;
+      right:0;
+      bottom:0;
+      background: url('../images/nav-mega-footer.png') 0 0 no-repeat;
+      width: 100%;
+      height: 64px;
+      padding: 29px 0 0;
+      @include transition(all 0.5s $ease-out-cubic);
+    }
+    &:hover{
+      .footer{
+        background: url('../images/nav-mega-footer-hover.png') 0 0 no-repeat;
+      }
+    }
+  }
+}
+
+.box-contents {
+  background-color: $white;
+  border: 1px solid #c1c1c1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  h2 {
+    display: inline-block;
+    text-align: center;
+    background: url('../images/h-castom-bg.png') 0 0 repeat-x;
+    position: relative;
+    height: 48px;
+    line-height:50px;
+    min-width: 324px;
+    color: $white;
+    margin:-1px 0 0;
+    padding:0 10px;
+    font-size: 17px;
+    text-transform: uppercase;
+    &:before {
+      content: '';
+      background: url('../images/h-castom-before.png') 0 0 no-repeat;
+      width: 36px;
+      height: 49px;
+      position: absolute;
+      top: 0;
+      left: -35px;
+    }
+    &:after {
+      content: '';
+      background: url('../images/h-castom-after.png') 0 0 no-repeat;
+      width: 36px;
+      height: 49px;
+      position: absolute;
+      top: 0;
+      right: -35px;
+    }
+
+  }
+}
+
+
+.selection{
+  padding: 28px 10px 0 56px;
+  .item{
+    margin:13px 0 25px;
+  }
+  ul{
+    padding:0 0 0 70px;
+    text-align: left;
+
+  }
+  li{
+    display: inline-block;
+    margin:0 5px 12px 0;
+    a{
+      display: inline-block;
+      border: 1px solid #dcdcdc;
+      padding: 9px 16px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      color: $color-text;
+      text-decoration: none;
+      font-size: 12px;
+      @include transition(all 0.5s $ease-out-cubic);
+      &:hover{
+        border: 1px solid #4b4b4b;
+        background: #656565;
+        background: -moz-linear-gradient(top,  #656565 28%, #3d3d3d 100%);
+        background: -webkit-linear-gradient(top,  #656565 28%,#3d3d3d 100%);
+        background: linear-gradient(to bottom,  #656565 28%,#3d3d3d 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#656565', endColorstr='#3d3d3d',GradientType=0 );
+        color: $white;
+      }
+    }
+  }
+
+}
+
+.lebles{
+  display: inline-block;
+  font-family: $ff-ptb;
+  line-height:55px;
+  text-align: center;
+  color: $color-text;
+  text-decoration: none;
+  margin:-7px 0;
+}
+
+
+.box-top{
+  margin:-49px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// \КОНТЕНТ\
+
+/*************************
+*     КАСТОМНЫЕ СТИЛИ
+**************************/
+
+@import "partials/media";

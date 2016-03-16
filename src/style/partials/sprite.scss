@@ -1,0 +1,199 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$avito-ico-name: 'avito-ico';
+$avito-ico-x: 274px;
+$avito-ico-y: 99px;
+$avito-ico-offset-x: -274px;
+$avito-ico-offset-y: -99px;
+$avito-ico-width: 59px;
+$avito-ico-height: 17px;
+$avito-ico-total-width: 351px;
+$avito-ico-total-height: 189px;
+$avito-ico-image: '../images/sprite.png';
+$avito-ico: (274px, 99px, -274px, -99px, 59px, 17px, 351px, 189px, '../images/sprite.png', 'avito-ico', );
+$basket-ico-name: 'basket-ico';
+$basket-ico-x: 0px;
+$basket-ico-y: 99px;
+$basket-ico-offset-x: 0px;
+$basket-ico-offset-y: -99px;
+$basket-ico-width: 162px;
+$basket-ico-height: 59px;
+$basket-ico-total-width: 351px;
+$basket-ico-total-height: 189px;
+$basket-ico-image: '../images/sprite.png';
+$basket-ico: (0px, 99px, 0px, -99px, 162px, 59px, 351px, 189px, '../images/sprite.png', 'basket-ico', );
+$lebles-hover-name: 'lebles-hover';
+$lebles-hover-x: 162px;
+$lebles-hover-y: 99px;
+$lebles-hover-offset-x: -162px;
+$lebles-hover-offset-y: -99px;
+$lebles-hover-width: 56px;
+$lebles-hover-height: 55px;
+$lebles-hover-total-width: 351px;
+$lebles-hover-total-height: 189px;
+$lebles-hover-image: '../images/sprite.png';
+$lebles-hover: (162px, 99px, -162px, -99px, 56px, 55px, 351px, 189px, '../images/sprite.png', 'lebles-hover', );
+$lebles-name: 'lebles';
+$lebles-x: 218px;
+$lebles-y: 99px;
+$lebles-offset-x: -218px;
+$lebles-offset-y: -99px;
+$lebles-width: 56px;
+$lebles-height: 55px;
+$lebles-total-width: 351px;
+$lebles-total-height: 189px;
+$lebles-image: '../images/sprite.png';
+$lebles: (218px, 99px, -218px, -99px, 56px, 55px, 351px, 189px, '../images/sprite.png', 'lebles', );
+$logo-name: 'logo';
+$logo-x: 0px;
+$logo-y: 0px;
+$logo-offset-x: 0px;
+$logo-offset-y: 0px;
+$logo-width: 351px;
+$logo-height: 99px;
+$logo-total-width: 351px;
+$logo-total-height: 189px;
+$logo-image: '../images/sprite.png';
+$logo: (0px, 0px, 0px, 0px, 351px, 99px, 351px, 189px, '../images/sprite.png', 'logo', );
+$nav-ico-1-name: 'nav-ico-1';
+$nav-ico-1-x: 0px;
+$nav-ico-1-y: 158px;
+$nav-ico-1-offset-x: 0px;
+$nav-ico-1-offset-y: -158px;
+$nav-ico-1-width: 30px;
+$nav-ico-1-height: 31px;
+$nav-ico-1-total-width: 351px;
+$nav-ico-1-total-height: 189px;
+$nav-ico-1-image: '../images/sprite.png';
+$nav-ico-1: (0px, 158px, 0px, -158px, 30px, 31px, 351px, 189px, '../images/sprite.png', 'nav-ico-1', );
+$nav-ico-2-name: 'nav-ico-2';
+$nav-ico-2-x: 306px;
+$nav-ico-2-y: 116px;
+$nav-ico-2-offset-x: -306px;
+$nav-ico-2-offset-y: -116px;
+$nav-ico-2-width: 29px;
+$nav-ico-2-height: 30px;
+$nav-ico-2-total-width: 351px;
+$nav-ico-2-total-height: 189px;
+$nav-ico-2-image: '../images/sprite.png';
+$nav-ico-2: (306px, 116px, -306px, -116px, 29px, 30px, 351px, 189px, '../images/sprite.png', 'nav-ico-2', );
+$nav-ico-3-name: 'nav-ico-3';
+$nav-ico-3-x: 274px;
+$nav-ico-3-y: 116px;
+$nav-ico-3-offset-x: -274px;
+$nav-ico-3-offset-y: -116px;
+$nav-ico-3-width: 32px;
+$nav-ico-3-height: 30px;
+$nav-ico-3-total-width: 351px;
+$nav-ico-3-total-height: 189px;
+$nav-ico-3-image: '../images/sprite.png';
+$nav-ico-3: (274px, 116px, -274px, -116px, 32px, 30px, 351px, 189px, '../images/sprite.png', 'nav-ico-3', );
+$our-ico-name: 'our-ico';
+$our-ico-x: 54px;
+$our-ico-y: 158px;
+$our-ico-offset-x: -54px;
+$our-ico-offset-y: -158px;
+$our-ico-width: 20px;
+$our-ico-height: 24px;
+$our-ico-total-width: 351px;
+$our-ico-total-height: 189px;
+$our-ico-image: '../images/sprite.png';
+$our-ico: (54px, 158px, -54px, -158px, 20px, 24px, 351px, 189px, '../images/sprite.png', 'our-ico', );
+$phone-ico-name: 'phone-ico';
+$phone-ico-x: 30px;
+$phone-ico-y: 158px;
+$phone-ico-offset-x: -30px;
+$phone-ico-offset-y: -158px;
+$phone-ico-width: 24px;
+$phone-ico-height: 24px;
+$phone-ico-total-width: 351px;
+$phone-ico-total-height: 189px;
+$phone-ico-image: '../images/sprite.png';
+$phone-ico: (30px, 158px, -30px, -158px, 24px, 24px, 351px, 189px, '../images/sprite.png', 'phone-ico', );
+$vc-ico-name: 'vc-ico';
+$vc-ico-x: 74px;
+$vc-ico-y: 158px;
+$vc-ico-offset-x: -74px;
+$vc-ico-offset-y: -158px;
+$vc-ico-width: 22px;
+$vc-ico-height: 13px;
+$vc-ico-total-width: 351px;
+$vc-ico-total-height: 189px;
+$vc-ico-image: '../images/sprite.png';
+$vc-ico: (74px, 158px, -74px, -158px, 22px, 13px, 351px, 189px, '../images/sprite.png', 'vc-ico', );
+$spritesheet-width: 351px;
+$spritesheet-height: 189px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($avito-ico, $basket-ico, $lebles-hover, $lebles, $logo, $nav-ico-1, $nav-ico-2, $nav-ico-3, $our-ico, $phone-ico, $vc-ico, );
+$spritesheet: (351px, 189px, '../images/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Here are example usages in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+`display: inline-block` sprite:
+<img class="icon-home" />
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
