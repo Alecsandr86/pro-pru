@@ -13,9 +13,61 @@ $(document).ready(function(){
         }
     } catch(err) {}
 
+    // СЛАЙДЕР
+    var slidBrend = new Swiper('.slid-brend', {
+        pagination: '.slid-brend-pagination',
+        slideNextClass: '.button-slid-next',
+        slidePrevClass: '.button-slid-prev',
+        nextButton: '.button-slid-next',
+        prevButton: '.button-slid-prev',
+
+        slidesPerView: 7,
+        slidesPerColumn: 2,
+        paginationClickable: true,
+        spaceBetween: 10,
+    });
+
+    // \СЛАЙДЕР\
+
+
+    //   Формы
+
+        $('select').styler({});
+
+    //  \Формы\
 
 
 
+        $(function() {
+            $('.nav-mega .item').bind('mouseenter',function(){
+                $(this).addClass('active');
+            });
+        });
+        $(function() {
+            $('.nav-mega .item').bind('mouseleave',function(){
+                $('.nav-mega .item').removeClass('active');
+            });
+        });
+
+
+        $(function() {
+            $('.nav-mega .down').bind('mouseenter',function(){
+                $(this).prev('.item').addClass('active');
+            });
+        });
+        $(function() {
+            $('.nav-mega .down').bind('mouseleave',function(){
+                $('.nav-mega .item').removeClass('active');
+            });
+        });
+
+
+
+        //$(function() {
+        //    $('.nav-mega .down').bind('mouseenter',function(){
+        //        $(this).prev('.item').addClass('active');
+        //    });
+        //});
 
 
 });

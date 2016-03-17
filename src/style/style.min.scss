@@ -5,12 +5,13 @@
 @import "../../bower_components/animate.css/animate.min.css";
 @import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../../bower_components/bourbon/app/assets/stylesheets/bourbon-deprecated-upcoming";
+@import "../../bower_components/Swiper/dist/css/swiper.min.css";
+@import "../../bower_components/jquery-form-styler/jquery.formstyler.css";
+
 
 @import "partials/sprite";
 
 @include sprites($spritesheet-sprites);
-
-
 
 //hover спрайта
 
@@ -252,7 +253,8 @@ header{
     text-decoration: none;
     padding:11px 14px;
     @include transition(all 0.5s $ease-out-cubic);
-    &:hover{
+    &:hover,
+    &.active{
       background:#e43201 url('../images/nav-big-bg-hover.png') 0 0 repeat-x;
     }
   }
@@ -284,10 +286,12 @@ header{
 
 .box-bg{
   background: url('../images/box-bootum.png') 0 100% repeat-x;
-  min-height: 397px;
+  //min-height: 397px;
+  padding:0 0 63px;
 }
 
 .nav-mega{
+  position: relative;
   text-align: center;
   padding: 10px 0;
   .item{
@@ -331,13 +335,73 @@ header{
       padding: 29px 0 0;
       @include transition(all 0.5s $ease-out-cubic);
     }
-    &:hover{
+    &:hover,
+    &.active{
       .footer{
         background: url('../images/nav-mega-footer-hover.png') 0 0 no-repeat;
       }
     }
+    &.active{
+      +.down{
+        display: block;
+      }
+    }
+  }
+  .down{
+    @include transition(all 0.5s $ease-out-cubic);
+    display: none;
+    position: absolute;
+    top:96.5%;
+    z-index:99;
+    left:50%;
+    margin-left: -49.3%;
+    width:1185px;
+    min-height:250px;
+    background-color: $color-astsent;
+    background-image: url('../images/down-bg.png');
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    padding:30px;
   }
 }
+
+.down-item{
+  width:50%;
+  font-family:$ff-ptr;
+  font-size:15px;
+  color: $white;
+  text-align: left;
+  ul{
+    float: left;
+  }
+  li{
+    background: url('../images/list-style.png') 0 50% no-repeat;
+    padding:3px 0 3px 10px;
+  }
+  strong{
+    font-size: 17px;
+    display: block;
+    margin:0 0 20px;
+  }
+  a{
+    font-size:15px;
+    color: $white;
+  }
+  &.one{
+    ul{
+      width:90px;
+    }
+  }
+  &.two{
+    ul{
+      width:256px;
+    }
+  }
+}
+
+
+
+
 
 .box-contents {
   background-color: $white;
@@ -346,6 +410,7 @@ header{
   -moz-border-radius: 5px;
   border-radius: 5px;
   text-align: center;
+  box-shadow: inset 0 0 35px #f2f2f2;
   h2 {
     display: inline-block;
     text-align: center;
@@ -432,7 +497,59 @@ header{
 
 
 .box-top{
-  margin:-49px 0;
+  margin:-49px 0 0;
+}
+
+.wr-slid-brend{
+  position: relative;
+  margin: 44px 0 19px;
+}
+.slid-brend{
+  padding:0;
+  width:1110px;
+  margin:0 auto;
+  .swiper-slide{
+    a{
+      display: inline-block;
+      border: 1px solid #e8e8e8;
+      width: 149px;
+      height: 74px;
+      line-height:74px;
+      @include transition(all 0.5s $ease-out-cubic);
+      &:hover{
+        border: 1px solid #aaa;
+      }
+    }
+    img{
+      vertical-align: middle;
+    }
+  }
+
+}
+
+.pagin-slid{
+  text-align: center;
+  padding:30px 0 10px;
+  width:100%;
+  position: relative;
+  .swiper-pagination-bullet{
+    width:12px;
+    height:12px;
+    margin:0 4px;
+    background-color: #c2c2c2;
+    opacity:1;
+    &:hover{
+      background-color: #9d9d9d;
+      opacity:1;
+    }
+  }
+  .swiper-pagination-bullet-active{
+    background-color: $color-astsent;
+    opacity:1;
+    &:hover{
+      background-color: $color-astsent;
+    }
+  }
 }
 
 
@@ -440,22 +557,195 @@ header{
 
 
 
+.button-slid-prev{
+  line-height:155px;
+  cursor: pointer;
+  width:27px;
+  -webkit-border-radius:0 5px 5px 0;
+  -moz-border-radius:0 5px 5px 0;
+  border-radius:0 5px 5px 0;
+  position: absolute;
+  top:0;
+  left:-1px;
+  i{
+    vertical-align: middle;
+  }
+  background-color: #ececec;
+  @include transition(all 0.5s $ease-out-cubic);
+  &:hover{
+    background-color: #ef3b08;
+  }
+  &.swiper-button-disabled{
+    opacity:0.5;
+    cursor: default;
+    background-color: #ececec;
+  }
+}
+.button-slid-next{
+  line-height:155px;
+  cursor: pointer;
+  width:27px;
+  -webkit-border-radius:5px 0 0 5px;
+  -moz-border-radius:5px 0 0 5px;
+  border-radius:5px 0 0 5px;
+  position: absolute;
+  top:0;
+  right:-1px;
+  i{
+    vertical-align: middle;
+  }
+  background-color: #ececec;
+  @include transition(all 0.5s $ease-out-cubic);
+  &:hover{
+    background-color: #ef3b08;
+  }
+  &.swiper-button-disabled{
+    opacity:0.5;
+    cursor: default;
+    background-color: #ececec;
+  }
+}
+
+.brand-selection{
+  width:1080px;
+  margin: 44px auto 28px;
+}
+
+
+
+
+.filter{
+  text-align: left;
+  >ul{
+    >li{
+      display: inline-block;
+      width:26%;
+      float: left;
+      margin:0 1.7% 0 0;
+      &:last-child{
+        width:15%;
+      }
+    }
+  }
+
+  .jq-selectbox{
+    width:100%;
+    text-align: left;
+  }
+  span{
+    display: block;
+    font-size:12px;
+    color: #6b6b6b;
+    padding: 8px 0;
+  }
+}
+
+
+
+
+
+.button{
+  display: inline-block;
+  width: 182px;
+  height: 43px;
+  line-height:43px;
+  background-color: #000100;
+  background-image: linear-gradient(to top, #dc1301 0%, #e22400 50%, #f3390a 51%, #f65a0d 100%);
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0 0 8px #ccc;
+  color:#ffffff;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.content-text{
+  margin:0 0 30px;
+  strong{
+    display: inline-block;
+    font-size: 20px;
+    font-family:$ff-ptr;
+    padding: 24px 0 12px;
+  }
+  p{
+    line-height:1.4;
+  }
+}
+
+
+
+
+// FOOTER
+.footer-content{
+  background-color: #f7f7f9;
+  padding: 28px 59px;
+  font-size: 12px;
+}
+.footer-nav{
+  width:541px;
+  ul{
+    float: left;
+    width:145px;
+  }
+  li{
+    margin:7px 0;
+  }
+  span{
+    font-family:$ff-ptr;
+    font-size:16px;
+    padding:5px 0;
+    display: inline-block;
+  }
+  a{
+    color: $color-text;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+
+.footer-phone{
+  width:355px;
+  span{
+    font-family:$ff-ptb;
+    font-size: 24px;
+    color: $color-astsent;
+    display: inline-block;
+    padding:10px 0 0;
+  }
+  p{
+    margin:3px 0;
+  }
+}
+.footer-adress{
+  padding:34px 0 0;
+  p{
+
+  }
+}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+.copyrite{
+  background-color: #e4e4e4;
+  text-align: center;
+  padding: 10px 13px;
+  line-height: 18px;
+}
+.met{
+  margin:-53px 0;
+  li{
+    display: inline-block;
+    margin:0 0 0 7px;
+  }
+}
+// \FOOTER\
 // \КОНТЕНТ\
 
 /*************************

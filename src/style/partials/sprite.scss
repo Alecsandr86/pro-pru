@@ -121,6 +121,28 @@ $phone-ico-total-width: 351px;
 $phone-ico-total-height: 189px;
 $phone-ico-image: '../images/sprite.png';
 $phone-ico: (30px, 158px, -30px, -158px, 24px, 24px, 351px, 189px, '../images/sprite.png', 'phone-ico', );
+$slid-next-name: 'slid-next';
+$slid-next-x: 333px;
+$slid-next-y: 99px;
+$slid-next-offset-x: -333px;
+$slid-next-offset-y: -99px;
+$slid-next-width: 10px;
+$slid-next-height: 16px;
+$slid-next-total-width: 351px;
+$slid-next-total-height: 189px;
+$slid-next-image: '../images/sprite.png';
+$slid-next: (333px, 99px, -333px, -99px, 10px, 16px, 351px, 189px, '../images/sprite.png', 'slid-next', );
+$slid-prev-name: 'slid-prev';
+$slid-prev-x: 335px;
+$slid-prev-y: 116px;
+$slid-prev-offset-x: -335px;
+$slid-prev-offset-y: -116px;
+$slid-prev-width: 10px;
+$slid-prev-height: 16px;
+$slid-prev-total-width: 351px;
+$slid-prev-total-height: 189px;
+$slid-prev-image: '../images/sprite.png';
+$slid-prev: (335px, 116px, -335px, -116px, 10px, 16px, 351px, 189px, '../images/sprite.png', 'slid-prev', );
 $vc-ico-name: 'vc-ico';
 $vc-ico-x: 74px;
 $vc-ico-y: 158px;
@@ -135,7 +157,7 @@ $vc-ico: (74px, 158px, -74px, -158px, 22px, 13px, 351px, 189px, '../images/sprit
 $spritesheet-width: 351px;
 $spritesheet-height: 189px;
 $spritesheet-image: '../images/sprite.png';
-$spritesheet-sprites: ($avito-ico, $basket-ico, $lebles-hover, $lebles, $logo, $nav-ico-1, $nav-ico-2, $nav-ico-3, $our-ico, $phone-ico, $vc-ico, );
+$spritesheet-sprites: ($avito-ico, $basket-ico, $lebles-hover, $lebles, $logo, $nav-ico-1, $nav-ico-2, $nav-ico-3, $our-ico, $phone-ico, $slid-next, $slid-prev, $vc-ico, );
 $spritesheet: (351px, 189px, '../images/sprite.png', $spritesheet-sprites, );
 
 /*
