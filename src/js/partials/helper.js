@@ -4,7 +4,17 @@ window.log = function(param){
 };
 $(document).ready(function(){
 
+    //   Формы
+    setTimeout(function() {
+        $('input, select').styler();
+    }, 100) ;
 
+    //  \Формы\
+
+   
+    
+    
+    
     //Chrome Smooth Scroll
     try {
         $.browserSelector();
@@ -30,11 +40,6 @@ $(document).ready(function(){
     // \СЛАЙДЕР\
 
 
-    //   Формы
-
-        $('select').styler({});
-
-    //  \Формы\
 
 
 
@@ -63,11 +68,9 @@ $(document).ready(function(){
 
 
 
-        //$(function() {
-        //    $('.nav-mega .down').bind('mouseenter',function(){
-        //        $(this).prev('.item').addClass('active');
-        //    });
-        //});
-
+        $('.list-sort .button-sort').bind('click',function(){
+            $('.list-sort .button-sort').removeClass('active');
+            $(this).addClass('active');
+        });
 
 });
