@@ -1,0 +1,127 @@
+//= template/head.html
+
+<div class="wrapper m-bootom">
+    <div class="box-contents checkout box-top">
+        <h2>оформление заказа</h2>
+        <strong class="title-h">Состав заказа:</strong>
+        <div class="wr-castum-table">
+            <table class="castum-table nth_child">
+                <thead>
+                <tr>
+                    <th>Товар</th>
+                    <th></th>
+                    <th>Цена за шт.</th>
+                    <th>Количество</th>
+                    <th>Сумма</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <div class="img">
+                            <img src="images/tov-min-1.jpg" alt="img">
+                        </div>
+                    </td>
+                    <td>
+                        <a href="javascript: void(0);">Toyo Vedrsado SUV 265/50 R19</a> <br>
+                        Размер: 265/50 R19
+                    </td>
+                    <td>
+                        <b>12 350 руб.</b>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="number" min="0" max="12" step="1" value="4"/>
+                        </label>
+                    </td>
+                    <td>
+                        <b>12 350 руб.</b>
+                    </td>
+                    <td>
+                        <a class="button-remove" href="javascript: void(0);"> <i class="remove"></i>Удалить</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="img">
+                            <img src="images/tov-min-2.jpg" alt="img">
+                        </div>
+                    </td>
+                    <td>
+                        <a href="javascript: void(0);">Off-Road-Wheels Toyota Nissan №5 8/R15</a> <br>
+                        Размер: R15
+                    </td>
+                    <td>
+                        <b>3 000 руб.</b>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="number" min="0" max="12" step="1" value="4"/>
+                        </label>
+                    </td>
+                    <td>
+                        <b>12 000 руб.</b>
+                    </td>
+                    <td>
+                        <a class="button-remove" href="javascript: void(0);"> <i class="remove"></i>Удалить</a>
+                    </td>
+                </tr>
+                <tfoot>
+                <tr>
+                    <td colspan="6">
+                        Итого: <span> 25 350 руб.</span>
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+            <div class="add-review both">
+                <strong>Данные для доставки:</strong>
+                <form class="form-castum" action="javascript: void(0);">
+                    <div class="left">
+                        <div class="list-review">
+                            <label>
+                                <b>Ф.И.О.<sup>*</sup></b>
+                                <input type="text" placeholder="Ф.И.О." required>
+                            </label>
+                            <label>
+                                <b>E-mail<sup>*</sup></b>
+                                <input type="email" placeholder="mail@mail.ru" required>
+                            </label>
+                            <label>
+                                <b>Телефон <sup>*</sup></b>
+                                <input type="tel" placeholder="+7 999 1112233" required>
+                            </label>
+                            <label>
+                                <b>Адрес</b>
+                                <input type="text" placeholder="Город, улица, номер дома, кв/офис">
+                            </label>
+                            <label>
+                                <b>Способ доставки  <sup>*</sup></b>
+                                <select>
+                                    <option>Самовывоз из магазина в Сантк-Петербурге</option>
+                                    <option>Пункт 1</option>
+                                    <option>Пункт 2</option>
+                                    <option>Пункт 3</option>
+                                    <option>Пункт 4</option>
+                                    <option>Пункт 5</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="right box-textar">
+                        <label>
+                            <textarea placeholder="Примечание к заказу"></textarea>
+                        </label>
+                    </div>
+                    <div class="cr"></div>
+                    <label class="br-center">
+                        <input type="submit" class="button">
+                    </label>
+                </form>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+//= template/footer.html

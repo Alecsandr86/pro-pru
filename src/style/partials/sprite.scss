@@ -209,6 +209,17 @@ $phone-ico-total-width: 351px;
 $phone-ico-total-height: 213px;
 $phone-ico-image: '../images/sprite.png';
 $phone-ico: (0px, 189px, 0px, -189px, 24px, 24px, 351px, 213px, '../images/sprite.png', 'phone-ico', );
+$remove-name: 'remove';
+$remove-x: 157px;
+$remove-y: 158px;
+$remove-offset-x: -157px;
+$remove-offset-y: -158px;
+$remove-width: 10px;
+$remove-height: 10px;
+$remove-total-width: 351px;
+$remove-total-height: 213px;
+$remove-image: '../images/sprite.png';
+$remove: (157px, 158px, -157px, -158px, 10px, 10px, 351px, 213px, '../images/sprite.png', 'remove', );
 $reviews-item-name: 'reviews-item';
 $reviews-item-x: 66px;
 $reviews-item-y: 158px;
@@ -278,7 +289,7 @@ $vc-ico: (124px, 158px, -124px, -158px, 22px, 13px, 351px, 213px, '../images/spr
 $spritesheet-width: 351px;
 $spritesheet-height: 213px;
 $spritesheet-image: '../images/sprite.png';
-$spritesheet-sprites: ($avito-ico, $basket-ico, $ico-equally, $ico-m-s, $ico-multiply, $ico-ot, $ico-sh, $ico-sh2, $ico-summe, $ico-winte, $lebles-hover, $lebles, $logo, $nav-ico-1, $nav-ico-2, $nav-ico-3, $our-ico, $phone-ico, $reviews-item, $slid-next, $slid-prev, $star, $stars, $vc-ico, );
+$spritesheet-sprites: ($avito-ico, $basket-ico, $ico-equally, $ico-m-s, $ico-multiply, $ico-ot, $ico-sh, $ico-sh2, $ico-summe, $ico-winte, $lebles-hover, $lebles, $logo, $nav-ico-1, $nav-ico-2, $nav-ico-3, $our-ico, $phone-ico, $remove, $reviews-item, $slid-next, $slid-prev, $star, $stars, $vc-ico, );
 $spritesheet: (351px, 213px, '../images/sprite.png', $spritesheet-sprites, );
 
 /*

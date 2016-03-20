@@ -1037,6 +1037,9 @@ header{
     line-height :43px;
     padding     :0 5px;
     text-align  :center;
+    &:focus{
+      outline :none;
+    }
   }
 }
 
@@ -1057,10 +1060,16 @@ header{
   &.minus{
     background :url('../images/minus.png') 50% 0 no-repeat;
     left       :0;
+    &:hover{
+      background-image :url('../images/minus-hover.png');
+    }
   }
   &.plus{
     background :url('../images/plus.png') 50% 0 no-repeat;
     right      :0;
+    &:hover{
+      background-image :url('../images/plus-hover.png');
+    }
   }
   &:focus,
   &:active{
@@ -1238,6 +1247,11 @@ header{
 .wr-castum-table{
   margin  :36px 0;
   padding :0 58px;
+  .add-review{
+    text-align :left;
+    border :none;
+    margin-top :30px;
+  }
 }
 
 .castum-table{
@@ -1304,6 +1318,23 @@ header{
       &:nth-child(3){
         text-align :left;
         padding    :0 0 0 20px;
+      }
+    }
+  }
+  tfoot{
+    tr{
+      text-align :right;
+      font-family :$ff-ptr;
+      font-size :14px;
+      border :none;
+      border-top :2px solid #49565e;
+    }
+    td{
+      height :50px;
+      span{
+        font-family :$ff-ptb;
+        color :#1c689a;
+        font-size :16px;
       }
     }
   }
@@ -1419,6 +1450,9 @@ textarea{
     height :143px;
     margin :0 0 9px;
   }
+  .jq-selectbox{
+    width :360px;
+  }
 }
 
 .box-textar{
@@ -1428,6 +1462,66 @@ textarea{
     margin :10px 0 0;
   }
 }
+
+.checkout{
+  
+}
+
+.title-h{
+  display :block;
+  text-align :center;
+  font-size :18px;
+  font-family :$ff-ptr;
+  margin :20px 0;
+}
+
+.nth_child{
+  tr{
+    td{
+      &:nth-child(2){
+        text-align :left;
+      }
+      
+    }
+  }
+}
+
+
+.remove{
+  
+}
+.button-remove{
+  text-decoration :none;
+  color :#f50500;
+  vertical-align :middle;
+  i{
+    vertical-align :middle;
+    margin :-2px 3px 0!important;
+  }
+}
+
+.br-center{
+  text-align :center;
+  display :block;
+  border-top :1px solid #dcdcdc;
+  padding :20px 0 0;
+  margin :30px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // FOOTER
 .footer-content{
