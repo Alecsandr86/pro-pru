@@ -1384,7 +1384,7 @@ header{
     background-color :white;
     border-bottom    :1px solid #c1c1c1;
     border-radius    :5px;
-    box-shadow       :inset 0 0 35px #f2f2f2;
+    //box-shadow       :inset 0 0 35px #f2f2f2;
     td{
       &:nth-child(3){
         text-align :left;
@@ -1518,6 +1518,7 @@ header{
 
 input{
   line-height      :40px;
+  height           :40px;
   background-color :#000100;
   background-image :linear-gradient(to top, #f7f7f9 0%, white 100%);
   border           :1px solid gainsboro;
