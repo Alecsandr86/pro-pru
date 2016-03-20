@@ -356,6 +356,7 @@ header{
     background-repeat   :no-repeat;
     background-position :100% 0;
     padding             :30px;
+    z-index             :999;
   }
 }
 
@@ -1669,92 +1670,112 @@ textarea{
 
 
 
+.disk-form-v{
+  &:before{
+    content    :'';
+    position   :absolute;
+    top        :-16px;
+    left       :-238px;
+    display    :inline-block;
+    background :url('../images/disk-item1.jpg') no-repeat 0 0;
+    width      :243px;
+    height     :199px;
 
+  }
 
+  &:after{
+    content    :'';
+    position   :absolute;
+    top        :-50px;
+    left       :578px;
+    display    :inline-block;
+    background :url('../images/disk-item2.jpg') no-repeat 0 0;
+    width      :209px;
+    height     :243px;
 
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-// FOOTER
-.footer-content{
-  background-color :#f7f7f9;
-  padding          :28px 59px;
-  font-size        :12px;
 }
 
-.footer-nav{
-  width :541px;
-  ul{
-    float :left;
-    width :145px;
+
+
+
+
+
+
+
+
+  // FOOTER
+  .footer-content{
+    background-color :#f7f7f9;
+    padding          :28px 59px;
+    font-size        :12px;
   }
-  li{
-    margin :7px 0;
-  }
-  span{
-    font-family :$ff-ptr;
-    font-size   :16px;
-    padding     :5px 0;
-    display     :inline-block;
-  }
-  a{
-    color :$color-text;
-    &:hover{
-      text-decoration :none;
+
+  .footer-nav{
+    width :541px;
+    ul{
+      float :left;
+      width :145px;
+    }
+    li{
+      margin :7px 0;
+    }
+    span{
+      font-family :$ff-ptr;
+      font-size   :16px;
+      padding     :5px 0;
+      display     :inline-block;
+    }
+    a{
+      color :$color-text;
+      &:hover{
+        text-decoration :none;
+      }
     }
   }
-}
 
-.footer-phone{
-  width :355px;
-  span{
-    font-family :$ff-ptb;
-    font-size   :24px;
-    color       :$color-astsent;
-    display     :inline-block;
-    padding     :10px 0 0;
+  .footer-phone{
+    width :355px;
+    span{
+      font-family :$ff-ptb;
+      font-size   :24px;
+      color       :$color-astsent;
+      display     :inline-block;
+      padding     :10px 0 0;
+    }
+    p{
+      margin :3px 0;
+    }
   }
-  p{
-    margin :3px 0;
+
+  .footer-adress{
+    padding :34px 0 0;
+    p{
+
+    }
   }
-}
 
-.footer-adress{
-  padding :34px 0 0;
-  p{
-
+  .copyrite{
+    background-color :#e4e4e4;
+    text-align       :center;
+    padding          :10px 13px;
+    line-height      :18px;
   }
-}
 
-.copyrite{
-  background-color :#e4e4e4;
-  text-align       :center;
-  padding          :10px 13px;
-  line-height      :18px;
-}
-
-.met{
-  margin :-53px 0;
-  li{
-    display :inline-block;
-    margin  :0 0 0 7px;
+  .met{
+    margin :-53px 0;
+    li{
+      display :inline-block;
+      margin  :0 0 0 7px;
+    }
   }
-}
 
-// \FOOTER\
-// \КОНТЕНТ\
+  // \FOOTER\
+  // \КОНТЕНТ\
 
-/*************************
-*     КАСТОМНЫЕ СТИЛИ
-**************************/
+  /*************************
+  *     КАСТОМНЫЕ СТИЛИ
+  **************************/
 
-@import "partials/media";
+  @import "partials/media";

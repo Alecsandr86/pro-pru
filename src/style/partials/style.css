@@ -262,25 +262,25 @@
 
 }
 
-.disk-items-v:before{
+.disk-form-v:before{
 	content: '';
 	position: absolute;
 	top: -19px;
 	left: -238px;
 	display: inline-block;
-	background: url(../images/disk-item1.jpg)no-repeat 1px 1px;
+	background: url('../images/disk-item1.jpg') no-repeat 0 0;
 	width: 243px;
 	height: 199px;
 	
 }
 
-.disk-items-v:after{
+.disk-form-v:after{
 	content: '';
 	position: absolute;
 	top: -57px;
 	left: 578px;
 	display: inline-block;
-	background: url(../images/disk-item2.jpg)no-repeat 1px 1px;
+	background: url('../images/disk-item2.jpg') no-repeat 0 0;
 	width: 209px;
 	height: 243px;
 	
@@ -313,6 +313,8 @@
 
 .disk-but-v{
 	margin-top: 14px;
+	border-top :1px solid #dcdcdc;
+	padding :15px 0 0;
 }
 
 .disk-but-v a{
@@ -328,7 +330,7 @@
 
 
 .brand-v{
-	margin: 21px 0 47px;
+	margin: 21px 58px 47px;
 	text-align: left;
 }
 
