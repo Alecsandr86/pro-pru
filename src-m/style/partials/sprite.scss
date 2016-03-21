@@ -1,0 +1,408 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$avito-ico-name: 'avito-ico';
+$avito-ico-x: 149px;
+$avito-ico-y: 158px;
+$avito-ico-offset-x: -149px;
+$avito-ico-offset-y: -158px;
+$avito-ico-width: 59px;
+$avito-ico-height: 17px;
+$avito-ico-total-width: 351px;
+$avito-ico-total-height: 260px;
+$avito-ico-image: '../images/sprite.png';
+$avito-ico: (149px, 158px, -149px, -158px, 59px, 17px, 351px, 260px, '../images/sprite.png', 'avito-ico', );
+$basket-ico-mobail-name: 'basket-ico-mobail';
+$basket-ico-mobail-x: 162px;
+$basket-ico-mobail-y: 99px;
+$basket-ico-mobail-offset-x: -162px;
+$basket-ico-mobail-offset-y: -99px;
+$basket-ico-mobail-width: 139px;
+$basket-ico-mobail-height: 54px;
+$basket-ico-mobail-total-width: 351px;
+$basket-ico-mobail-total-height: 260px;
+$basket-ico-mobail-image: '../images/sprite.png';
+$basket-ico-mobail: (162px, 99px, -162px, -99px, 139px, 54px, 351px, 260px, '../images/sprite.png', 'basket-ico-mobail', );
+$basket-ico-name: 'basket-ico';
+$basket-ico-x: 0px;
+$basket-ico-y: 99px;
+$basket-ico-offset-x: 0px;
+$basket-ico-offset-y: -99px;
+$basket-ico-width: 162px;
+$basket-ico-height: 59px;
+$basket-ico-total-width: 351px;
+$basket-ico-total-height: 260px;
+$basket-ico-image: '../images/sprite.png';
+$basket-ico: (0px, 99px, 0px, -99px, 162px, 59px, 351px, 260px, '../images/sprite.png', 'basket-ico', );
+$ico-equally-name: 'ico-equally';
+$ico-equally-x: 337px;
+$ico-equally-y: 143px;
+$ico-equally-offset-x: -337px;
+$ico-equally-offset-y: -143px;
+$ico-equally-width: 11px;
+$ico-equally-height: 6px;
+$ico-equally-total-width: 351px;
+$ico-equally-total-height: 260px;
+$ico-equally-image: '../images/sprite.png';
+$ico-equally: (337px, 143px, -337px, -143px, 11px, 6px, 351px, 260px, '../images/sprite.png', 'ico-equally', );
+$ico-m-s-name: 'ico-m-s';
+$ico-m-s-x: 301px;
+$ico-m-s-y: 129px;
+$ico-m-s-offset-x: -301px;
+$ico-m-s-offset-y: -129px;
+$ico-m-s-width: 36px;
+$ico-m-s-height: 23px;
+$ico-m-s-total-width: 351px;
+$ico-m-s-total-height: 260px;
+$ico-m-s-image: '../images/sprite.png';
+$ico-m-s: (301px, 129px, -301px, -129px, 36px, 23px, 351px, 260px, '../images/sprite.png', 'ico-m-s', );
+$ico-multiply-name: 'ico-multiply';
+$ico-multiply-x: 262px;
+$ico-multiply-y: 158px;
+$ico-multiply-offset-x: -262px;
+$ico-multiply-offset-y: -158px;
+$ico-multiply-width: 11px;
+$ico-multiply-height: 11px;
+$ico-multiply-total-width: 351px;
+$ico-multiply-total-height: 260px;
+$ico-multiply-image: '../images/sprite.png';
+$ico-multiply: (262px, 158px, -262px, -158px, 11px, 11px, 351px, 260px, '../images/sprite.png', 'ico-multiply', );
+$ico-ot-name: 'ico-ot';
+$ico-ot-x: 263px;
+$ico-ot-y: 175px;
+$ico-ot-offset-x: -263px;
+$ico-ot-offset-y: -175px;
+$ico-ot-width: 16px;
+$ico-ot-height: 16px;
+$ico-ot-total-width: 351px;
+$ico-ot-total-height: 260px;
+$ico-ot-image: '../images/sprite.png';
+$ico-ot: (263px, 175px, -263px, -175px, 16px, 16px, 351px, 260px, '../images/sprite.png', 'ico-ot', );
+$ico-sh-name: 'ico-sh';
+$ico-sh-x: 333px;
+$ico-sh-y: 99px;
+$ico-sh-offset-x: -333px;
+$ico-sh-offset-y: -99px;
+$ico-sh-width: 17px;
+$ico-sh-height: 17px;
+$ico-sh-total-width: 351px;
+$ico-sh-total-height: 260px;
+$ico-sh-image: '../images/sprite.png';
+$ico-sh: (333px, 99px, -333px, -99px, 17px, 17px, 351px, 260px, '../images/sprite.png', 'ico-sh', );
+$ico-sh2-name: 'ico-sh2';
+$ico-sh2-x: 208px;
+$ico-sh2-y: 158px;
+$ico-sh2-offset-x: -208px;
+$ico-sh2-offset-y: -158px;
+$ico-sh2-width: 17px;
+$ico-sh2-height: 17px;
+$ico-sh2-total-width: 351px;
+$ico-sh2-total-height: 260px;
+$ico-sh2-image: '../images/sprite.png';
+$ico-sh2: (208px, 158px, -208px, -158px, 17px, 17px, 351px, 260px, '../images/sprite.png', 'ico-sh2', );
+$ico-summe-name: 'ico-summe';
+$ico-summe-x: 198px;
+$ico-summe-y: 205px;
+$ico-summe-offset-x: -198px;
+$ico-summe-offset-y: -205px;
+$ico-summe-width: 20px;
+$ico-summe-height: 20px;
+$ico-summe-total-width: 351px;
+$ico-summe-total-height: 260px;
+$ico-summe-image: '../images/sprite.png';
+$ico-summe: (198px, 205px, -198px, -205px, 20px, 20px, 351px, 260px, '../images/sprite.png', 'ico-summe', );
+$ico-winte-name: 'ico-winte';
+$ico-winte-x: 244px;
+$ico-winte-y: 175px;
+$ico-winte-offset-x: -244px;
+$ico-winte-offset-y: -175px;
+$ico-winte-width: 19px;
+$ico-winte-height: 19px;
+$ico-winte-total-width: 351px;
+$ico-winte-total-height: 260px;
+$ico-winte-image: '../images/sprite.png';
+$ico-winte: (244px, 175px, -244px, -175px, 19px, 19px, 351px, 260px, '../images/sprite.png', 'ico-winte', );
+$lebles-hover-name: 'lebles-hover';
+$lebles-hover-x: 112px;
+$lebles-hover-y: 205px;
+$lebles-hover-offset-x: -112px;
+$lebles-hover-offset-y: -205px;
+$lebles-hover-width: 56px;
+$lebles-hover-height: 55px;
+$lebles-hover-total-width: 351px;
+$lebles-hover-total-height: 260px;
+$lebles-hover-image: '../images/sprite.png';
+$lebles-hover: (112px, 205px, -112px, -205px, 56px, 55px, 351px, 260px, '../images/sprite.png', 'lebles-hover', );
+$lebles-w-name: 'lebles-w';
+$lebles-w-x: 56px;
+$lebles-w-y: 205px;
+$lebles-w-offset-x: -56px;
+$lebles-w-offset-y: -205px;
+$lebles-w-width: 56px;
+$lebles-w-height: 55px;
+$lebles-w-total-width: 351px;
+$lebles-w-total-height: 260px;
+$lebles-w-image: '../images/sprite.png';
+$lebles-w: (56px, 205px, -56px, -205px, 56px, 55px, 351px, 260px, '../images/sprite.png', 'lebles-w', );
+$lebles-name: 'lebles';
+$lebles-x: 0px;
+$lebles-y: 205px;
+$lebles-offset-x: 0px;
+$lebles-offset-y: -205px;
+$lebles-width: 56px;
+$lebles-height: 55px;
+$lebles-total-width: 351px;
+$lebles-total-height: 260px;
+$lebles-image: '../images/sprite.png';
+$lebles: (0px, 205px, 0px, -205px, 56px, 55px, 351px, 260px, '../images/sprite.png', 'lebles', );
+$logo-mobail-name: 'logo-mobail';
+$logo-mobail-x: 0px;
+$logo-mobail-y: 158px;
+$logo-mobail-offset-x: 0px;
+$logo-mobail-offset-y: -158px;
+$logo-mobail-width: 149px;
+$logo-mobail-height: 47px;
+$logo-mobail-total-width: 351px;
+$logo-mobail-total-height: 260px;
+$logo-mobail-image: '../images/sprite.png';
+$logo-mobail: (0px, 158px, 0px, -158px, 149px, 47px, 351px, 260px, '../images/sprite.png', 'logo-mobail', );
+$logo-name: 'logo';
+$logo-x: 0px;
+$logo-y: 0px;
+$logo-offset-x: 0px;
+$logo-offset-y: 0px;
+$logo-width: 351px;
+$logo-height: 99px;
+$logo-total-width: 351px;
+$logo-total-height: 260px;
+$logo-image: '../images/sprite.png';
+$logo: (0px, 0px, 0px, 0px, 351px, 99px, 351px, 260px, '../images/sprite.png', 'logo', );
+$nav-ico-1-name: 'nav-ico-1';
+$nav-ico-1-x: 168px;
+$nav-ico-1-y: 205px;
+$nav-ico-1-offset-x: -168px;
+$nav-ico-1-offset-y: -205px;
+$nav-ico-1-width: 30px;
+$nav-ico-1-height: 31px;
+$nav-ico-1-total-width: 351px;
+$nav-ico-1-total-height: 260px;
+$nav-ico-1-image: '../images/sprite.png';
+$nav-ico-1: (168px, 205px, -168px, -205px, 30px, 31px, 351px, 260px, '../images/sprite.png', 'nav-ico-1', );
+$nav-ico-2-name: 'nav-ico-2';
+$nav-ico-2-x: 149px;
+$nav-ico-2-y: 175px;
+$nav-ico-2-offset-x: -149px;
+$nav-ico-2-offset-y: -175px;
+$nav-ico-2-width: 29px;
+$nav-ico-2-height: 30px;
+$nav-ico-2-total-width: 351px;
+$nav-ico-2-total-height: 260px;
+$nav-ico-2-image: '../images/sprite.png';
+$nav-ico-2: (149px, 175px, -149px, -175px, 29px, 30px, 351px, 260px, '../images/sprite.png', 'nav-ico-2', );
+$nav-ico-3-name: 'nav-ico-3';
+$nav-ico-3-x: 301px;
+$nav-ico-3-y: 99px;
+$nav-ico-3-offset-x: -301px;
+$nav-ico-3-offset-y: -99px;
+$nav-ico-3-width: 32px;
+$nav-ico-3-height: 30px;
+$nav-ico-3-total-width: 351px;
+$nav-ico-3-total-height: 260px;
+$nav-ico-3-image: '../images/sprite.png';
+$nav-ico-3: (301px, 99px, -301px, -99px, 32px, 30px, 351px, 260px, '../images/sprite.png', 'nav-ico-3', );
+$nav-mobail-up-name: 'nav-mobail-up';
+$nav-mobail-up-x: 247px;
+$nav-mobail-up-y: 158px;
+$nav-mobail-up-offset-x: -247px;
+$nav-mobail-up-offset-y: -158px;
+$nav-mobail-up-width: 15px;
+$nav-mobail-up-height: 12px;
+$nav-mobail-up-total-width: 351px;
+$nav-mobail-up-total-height: 260px;
+$nav-mobail-up-image: '../images/sprite.png';
+$nav-mobail-up: (247px, 158px, -247px, -158px, 15px, 12px, 351px, 260px, '../images/sprite.png', 'nav-mobail-up', );
+$nav-mobail-name: 'nav-mobail';
+$nav-mobail-x: 333px;
+$nav-mobail-y: 116px;
+$nav-mobail-offset-x: -333px;
+$nav-mobail-offset-y: -116px;
+$nav-mobail-width: 15px;
+$nav-mobail-height: 12px;
+$nav-mobail-total-width: 351px;
+$nav-mobail-total-height: 260px;
+$nav-mobail-image: '../images/sprite.png';
+$nav-mobail: (333px, 116px, -333px, -116px, 15px, 12px, 351px, 260px, '../images/sprite.png', 'nav-mobail', );
+$our-ico-name: 'our-ico';
+$our-ico-x: 202px;
+$our-ico-y: 175px;
+$our-ico-offset-x: -202px;
+$our-ico-offset-y: -175px;
+$our-ico-width: 20px;
+$our-ico-height: 24px;
+$our-ico-total-width: 351px;
+$our-ico-total-height: 260px;
+$our-ico-image: '../images/sprite.png';
+$our-ico: (202px, 175px, -202px, -175px, 20px, 24px, 351px, 260px, '../images/sprite.png', 'our-ico', );
+$phone-ico-name: 'phone-ico';
+$phone-ico-x: 178px;
+$phone-ico-y: 175px;
+$phone-ico-offset-x: -178px;
+$phone-ico-offset-y: -175px;
+$phone-ico-width: 24px;
+$phone-ico-height: 24px;
+$phone-ico-total-width: 351px;
+$phone-ico-total-height: 260px;
+$phone-ico-image: '../images/sprite.png';
+$phone-ico: (178px, 175px, -178px, -175px, 24px, 24px, 351px, 260px, '../images/sprite.png', 'phone-ico', );
+$remove-name: 'remove';
+$remove-x: 273px;
+$remove-y: 158px;
+$remove-offset-x: -273px;
+$remove-offset-y: -158px;
+$remove-width: 10px;
+$remove-height: 10px;
+$remove-total-width: 351px;
+$remove-total-height: 260px;
+$remove-image: '../images/sprite.png';
+$remove: (273px, 158px, -273px, -158px, 10px, 10px, 351px, 260px, '../images/sprite.png', 'remove', );
+$reviews-item-name: 'reviews-item';
+$reviews-item-x: 222px;
+$reviews-item-y: 175px;
+$reviews-item-offset-x: -222px;
+$reviews-item-offset-y: -175px;
+$reviews-item-width: 22px;
+$reviews-item-height: 19px;
+$reviews-item-total-width: 351px;
+$reviews-item-total-height: 260px;
+$reviews-item-image: '../images/sprite.png';
+$reviews-item: (222px, 175px, -222px, -175px, 22px, 19px, 351px, 260px, '../images/sprite.png', 'reviews-item', );
+$slid-next-name: 'slid-next';
+$slid-next-x: 295px;
+$slid-next-y: 175px;
+$slid-next-offset-x: -295px;
+$slid-next-offset-y: -175px;
+$slid-next-width: 10px;
+$slid-next-height: 16px;
+$slid-next-total-width: 351px;
+$slid-next-total-height: 260px;
+$slid-next-image: '../images/sprite.png';
+$slid-next: (295px, 175px, -295px, -175px, 10px, 16px, 351px, 260px, '../images/sprite.png', 'slid-next', );
+$slid-prev-name: 'slid-prev';
+$slid-prev-x: 305px;
+$slid-prev-y: 175px;
+$slid-prev-offset-x: -305px;
+$slid-prev-offset-y: -175px;
+$slid-prev-width: 10px;
+$slid-prev-height: 16px;
+$slid-prev-total-width: 351px;
+$slid-prev-total-height: 260px;
+$slid-prev-image: '../images/sprite.png';
+$slid-prev: (305px, 175px, -305px, -175px, 10px, 16px, 351px, 260px, '../images/sprite.png', 'slid-prev', );
+$star-name: 'star';
+$star-x: 279px;
+$star-y: 175px;
+$star-offset-x: -279px;
+$star-offset-y: -175px;
+$star-width: 16px;
+$star-height: 16px;
+$star-total-width: 351px;
+$star-total-height: 260px;
+$star-image: '../images/sprite.png';
+$star: (279px, 175px, -279px, -175px, 16px, 16px, 351px, 260px, '../images/sprite.png', 'star', );
+$stars-name: 'stars';
+$stars-x: 337px;
+$stars-y: 129px;
+$stars-offset-x: -337px;
+$stars-offset-y: -129px;
+$stars-width: 14px;
+$stars-height: 14px;
+$stars-total-width: 351px;
+$stars-total-height: 260px;
+$stars-image: '../images/sprite.png';
+$stars: (337px, 129px, -337px, -129px, 14px, 14px, 351px, 260px, '../images/sprite.png', 'stars', );
+$vc-ico-name: 'vc-ico';
+$vc-ico-x: 225px;
+$vc-ico-y: 158px;
+$vc-ico-offset-x: -225px;
+$vc-ico-offset-y: -158px;
+$vc-ico-width: 22px;
+$vc-ico-height: 13px;
+$vc-ico-total-width: 351px;
+$vc-ico-total-height: 260px;
+$vc-ico-image: '../images/sprite.png';
+$vc-ico: (225px, 158px, -225px, -158px, 22px, 13px, 351px, 260px, '../images/sprite.png', 'vc-ico', );
+$spritesheet-width: 351px;
+$spritesheet-height: 260px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($avito-ico, $basket-ico-mobail, $basket-ico, $ico-equally, $ico-m-s, $ico-multiply, $ico-ot, $ico-sh, $ico-sh2, $ico-summe, $ico-winte, $lebles-hover, $lebles-w, $lebles, $logo-mobail, $logo, $nav-ico-1, $nav-ico-2, $nav-ico-3, $nav-mobail-up, $nav-mobail, $our-ico, $phone-ico, $remove, $reviews-item, $slid-next, $slid-prev, $star, $stars, $vc-ico, );
+$spritesheet: (351px, 260px, '../images/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Here are example usages in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+`display: inline-block` sprite:
+<img class="icon-home" />
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

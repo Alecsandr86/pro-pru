@@ -1,0 +1,1784 @@
+/********************************
+*      ДОПОЛНИТЕЛЬНЫЕ СТИЛИ
+*********************************/
+@import "../../bower_components/normalize.css/normalize.css";
+@import "../../bower_components/animate.css/animate.min.css";
+@import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../../bower_components/bourbon/app/assets/stylesheets/bourbon-deprecated-upcoming";
+@import "../../bower_components/Swiper/dist/css/swiper.min.css";
+@import "../../bower_components/jquery-form-styler/jquery.formstyler.css";
+@import "partials/sprite";
+@import "partials/style.css";
+
+@include sprites($spritesheet-sprites);
+
+//hover спрайта
+
+@include font-face("pt_sansregular", "../fonts/PT_Sans");
+@include font-face("pt_sansbold", "../fonts/PT_Sans_Bold");
+@include font-face("pt_sans_captionbold", "../fonts/PTC75F");
+
+// Переменые
+
+$em-base :13px;
+$white :#fff;
+$color-black :#000;
+$color-text :#383838;
+$color-astsent :#ef3b08;
+$ff-ptr :"pt_sansregular";
+$ff-ptb :"pt_sansbold";
+$ff-ptcb :"pt_sans_captionbold";
+
+// \\\ Переменые \\\
+
+.lebles{
+  @include sprite($lebles);
+  &:hover{
+    @include sprite($lebles-hover);
+    color :$color-astsent;
+  }
+}
+
+*{
+  @include box-sizing(border-box);
+}
+
+.animat{
+  @include transition(all 0.5s $ease-out-cubic);
+}
+
+html{
+  font-size :$em-base;
+}
+
+body{
+  color            :$color-text;
+  font-family      :$arial;
+  background-color :#ededed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong{
+  font-family :$ff-ptb;
+}
+
+i{
+  display :inline-block;
+}
+
+ul{
+  padding         :0;
+  margin          :0;
+  list-style-type :none;
+}
+
+p{
+  margin :10px 0;
+}
+
+.left{
+  float :left;
+}
+
+.right{
+  float :right;
+}
+
+.both:after{
+  clear   :both;
+  content :"";
+  display :block;
+  float   :none;
+  margin  :0;
+  padding :0;
+}
+
+.cr{
+  float     :none;
+  clear     :both;
+  margin    :0;
+  padding   :0;
+  font-size :0.1px;
+  display   :block;
+}
+
+.outer{
+  &:before{
+    content        :'';
+    display        :inline-block;
+    height         :100%;
+    vertical-align :middle;
+  }
+}
+
+/********************************
+*       ОСНОВНЫЕ СТИЛИ
+********************************/
+
+.wrapper-fluid{
+  //overflow: hidden;
+}
+
+.wrapper{
+  position :relative;
+  //overflow :hidden;
+  width  :320px;
+  margin :0 auto;
+}
+
+// КОНТЕНТ
+
+header{
+
+}
+
+.top-header{
+  background-color :#d9dce1;
+  padding          :9px 0 0;
+}
+
+.social-network{
+  li{
+    display        :inline-block;
+    vertical-align :middle;
+    margin         :0 7px;
+  }
+  a{
+    display         :inline-block;
+    color           :#577290;
+    font-size       :12px;
+    vertical-align  :middle;
+    text-decoration :none;
+  }
+  i{
+    vertical-align :middle;
+    margin         :0 5px 0 0;
+  }
+}
+
+.header-contact{
+  padding: 14px 14px 0 10px;
+}
+
+.logo-cont{
+  width :425px;
+}
+
+.contacts-top{
+  width   :490px;
+  padding :24px 0 0;
+  i{
+    margin :5px 0 0 6px;
+  }
+  ul{
+    margin :5px 0 0;
+    li{
+      font-size   :14px;
+      font-family :$ff-ptr;
+      b{
+        font-family :$ff-ptb;
+      }
+    }
+  }
+}
+
+.phone-b{
+  width  :200px;
+  margin :0 4px 0 26px;
+  p{
+    margin         :0;
+    float          :left;
+    text-transform :uppercase;
+    font-size      :24px;
+    font-family    :$ff-ptr;
+    span{
+      color :$color-astsent;
+    }
+  }
+}
+
+.basket{
+  text-align :center;
+  padding    :23px 0 0;
+  span{
+    display     :inline-block;
+    text-align  :center;
+    line-height :59px;
+    color       :$white;
+  }
+  a{
+    text-transform  :uppercase;
+    font-family     :$ff-ptr;
+    text-decoration :none;
+    color           :$color-text;
+    display         :block;
+    padding         :5px 0 0 29px;
+  }
+}
+
+.nav{
+  background-color :#373737;
+
+}
+
+.nav-big{
+  ul{
+    margin :0;
+  }
+  li{
+    display        :inline-block;
+    float          :left;
+    margin         :0 1px 0 0;
+    vertical-align :middle;
+  }
+  a{
+    display         :inline-block;
+    color           :$white;
+    font-size       :16px;
+    font-family     :$ff-ptr;
+    width           :160px;
+    height          :53px;
+    line-height     :32px;
+    background      :#6f6f6f url('../images/nav-big-bg.png') 0 0 repeat-x;
+    vertical-align  :middle;
+    text-decoration :none;
+    padding         :11px 14px;
+    @include transition(all 0.5s $ease-out-cubic);
+    &:hover,
+    &.active{
+      background :#e43201 url('../images/nav-big-bg-hover.png') 0 0 repeat-x;
+    }
+  }
+  i{
+    vertical-align :middle;
+    margin         :0 10px 0 0;
+  }
+}
+
+.nav-mini{
+  ul{
+  }
+  li{
+    display :inline-block;
+    margin  :0 13px;
+  }
+  a{
+    display     :inline-block;
+    color       :$white;
+    font-size   :16px;
+    font-family :$ff-ptr;
+    padding     :18px 0 14px;
+    &:hover{
+      text-decoration :none;
+    }
+  }
+}
+
+.box-bg{
+  background :url('../images/box-bootum.png') 0 100% repeat-x;
+  //min-height: 397px;
+  padding    :0 0 63px;
+}
+
+.nav-mega{
+  position   :relative;
+  text-align :center;
+  padding    :10px 0;
+  .item{
+    display     :inline-block;
+    width       :230px;
+    position    :relative;
+    color       :$white;
+    font-family :$ff-ptcb;
+    font-size   :18px;
+    height      :310px;
+    margin      :0 2px;
+    &:before{
+      content    :'';
+      width      :100%;
+      background :url('../images/nav-mega-shadow.png') 0 0 no-repeat;
+      height     :25px;
+      position   :absolute;
+      bottom     :-24px;
+      left       :0;
+    }
+    img{
+      width  :100%;
+      height :100%;
+    }
+    strong{
+      position       :absolute;
+      top            :12px;
+      letter-spacing :1px;
+      left           :0;
+      right          :0;
+      font-size      :24px;
+    }
+    .footer{
+      position   :absolute;
+      left       :0;
+      right      :0;
+      bottom     :0;
+      background :url('../images/nav-mega-footer.png') 0 0 no-repeat;
+      width      :100%;
+      height     :64px;
+      padding    :29px 0 0;
+      @include transition(all 0.5s $ease-out-cubic);
+    }
+    &:hover,
+    &.active{
+      .footer{
+        background :url('../images/nav-mega-footer-hover.png') 0 0 no-repeat;
+      }
+    }
+    &.active{
+      + .down{
+        display :block;
+      }
+    }
+  }
+  .down{
+    @include transition(all 0.5s $ease-out-cubic);
+    display             :none;
+    position            :absolute;
+    top                 :96.5%;
+    z-index             :99;
+    left                :50%;
+    margin-left         :-49.3%;
+    width               :1185px;
+    min-height          :250px;
+    background-color    :$color-astsent;
+    background-image    :url('../images/down-bg.png');
+    background-repeat   :no-repeat;
+    background-position :100% 0;
+    padding             :30px;
+    z-index             :999;
+  }
+}
+
+.down-item{
+  width       :50%;
+  font-family :$ff-ptr;
+  font-size   :15px;
+  color       :$white;
+  text-align  :left;
+  ul{
+    float :left;
+  }
+  li{
+    background :url('../images/list-style.png') 0 50% no-repeat;
+    padding    :3px 0 3px 10px;
+  }
+  strong{
+    font-size :17px;
+    display   :block;
+    margin    :0 0 20px;
+  }
+  a{
+    font-size :15px;
+    color     :$white;
+  }
+  &.one{
+    ul{
+      width :90px;
+    }
+  }
+  &.two{
+    ul{
+      width :256px;
+      color :red;
+    }
+  }
+}
+
+.box-contents{
+  position              :relative;
+  background-color      :$white;
+  border                :1px solid #c1c1c1;
+  -webkit-border-radius :0px;
+  -moz-border-radius    :0px;
+  border-radius         :0px;
+  text-align            :center;
+  box-shadow            :inset 0 0 35px #f2f2f2;
+  h2{
+    display        :inline-block;
+    text-align     :center;
+    background     :url('../images/h-castom-bg.png') 0 0 repeat-x;
+    position       :relative;
+    height         :48px;
+    line-height    :50px;
+    min-width      :324px;
+    color          :$white;
+    margin         :-1px 0 0;
+    padding        :0 10px;
+    font-size      :17px;
+    text-transform :uppercase;
+    &:before{
+      content    :'';
+      background :url('../images/h-castom-before.png') 0 0 no-repeat;
+      width      :36px;
+      height     :49px;
+      position   :absolute;
+      top        :0;
+      left       :-35px;
+    }
+    &:after{
+      content    :'';
+      background :url('../images/h-castom-after.png') 0 0 no-repeat;
+      width      :36px;
+      height     :49px;
+      position   :absolute;
+      top        :0;
+      right      :-35px;
+    }
+
+  }
+}
+
+.selection{
+  padding :28px 10px 0 56px;
+  .item{
+    margin :13px 0 25px;
+  }
+  ul{
+    padding    :0 0 0 70px;
+    text-align :left;
+
+  }
+  li{
+    display :inline-block;
+    margin  :0 5px 12px 0;
+    a{
+      display               :inline-block;
+      border                :1px solid #dcdcdc;
+      padding               :9px 16px;
+      -webkit-border-radius :20px;
+      -moz-border-radius    :20px;
+      border-radius         :20px;
+      color                 :$color-text;
+      text-decoration       :none;
+      font-size             :12px;
+      @include transition(all 0.5s $ease-out-cubic);
+      &:hover{
+        border     :1px solid #4b4b4b;
+        background :#656565;
+        background :-moz-linear-gradient(top, #656565 28%, #3d3d3d 100%);
+        background :-webkit-linear-gradient(top, #656565 28%, #3d3d3d 100%);
+        background :linear-gradient(to bottom, #656565 28%, #3d3d3d 100%);
+        filter     :progid:DXImageTransform.Microsoft.gradient(startColorstr='#656565', endColorstr='#3d3d3d', GradientType=0);
+        color      :$white;
+      }
+    }
+  }
+
+}
+
+.lebles{
+  display         :inline-block;
+  font-family     :$ff-ptb;
+  line-height     :55px;
+  text-align      :center;
+  color           :$color-text;
+  text-decoration :none;
+  margin          :-7px 0;
+}
+
+.box-top{
+  margin :-49px 0 0;
+}
+
+.wr-slid-brend{
+  position :relative;
+  margin   :44px 0 19px;
+}
+
+.slid-brend{
+  padding :0;
+  width   :1110px;
+  margin  :0 auto;
+  .swiper-slide{
+    a{
+      display     :inline-block;
+      border      :1px solid #e8e8e8;
+      width       :149px;
+      height      :74px;
+      line-height :74px;
+      @include transition(all 0.5s $ease-out-cubic);
+      &:hover{
+        border :1px solid #aaa;
+      }
+    }
+    img{
+      vertical-align :middle;
+    }
+  }
+
+}
+
+.pagin-slid{
+  text-align :center;
+  padding    :30px 0 10px;
+  width      :100%;
+  position   :relative;
+
+  .swiper-pagination-bullet{
+    width            :12px;
+    height           :12px;
+    margin           :0 4px;
+    background-color :#c2c2c2;
+    opacity          :1;
+    &:hover{
+      background-color :#9d9d9d;
+      opacity          :1;
+    }
+  }
+  .swiper-pagination-bullet-active{
+    background-color :$color-astsent;
+    opacity          :1;
+    &:hover{
+      background-color :$color-astsent;
+    }
+  }
+}
+
+.button-slid-prev{
+  line-height           :155px;
+  cursor                :pointer;
+  width                 :27px;
+  -webkit-border-radius :0 5px 5px 0;
+  -moz-border-radius    :0 5px 5px 0;
+  border-radius         :0 5px 5px 0;
+  position              :absolute;
+  top                   :0;
+  left                  :-1px;
+  i{
+    vertical-align :middle;
+  }
+  background-color      :#ececec;
+  @include transition(all 0.5s $ease-out-cubic);
+  &:hover{
+    background-color :#ef3b08;
+  }
+  &.swiper-button-disabled{
+    opacity          :0.5;
+    cursor           :default;
+    background-color :#ececec;
+  }
+}
+
+.button-slid-next{
+  line-height           :155px;
+  cursor                :pointer;
+  width                 :27px;
+  -webkit-border-radius :5px 0 0 5px;
+  -moz-border-radius    :5px 0 0 5px;
+  border-radius         :5px 0 0 5px;
+  position              :absolute;
+  top                   :0;
+  right                 :-1px;
+  i{
+    vertical-align :middle;
+  }
+  background-color      :#ececec;
+  @include transition(all 0.5s $ease-out-cubic);
+  &:hover{
+    background-color :#ef3b08;
+  }
+  &.swiper-button-disabled{
+    opacity          :0.5;
+    cursor           :default;
+    background-color :#ececec;
+  }
+}
+
+.brand-selection{
+  width  :1080px;
+  margin :44px auto 28px;
+}
+
+.filter{
+  text-align :left;
+  > ul{
+    > li{
+      display :inline-block;
+      width   :26%;
+      float   :left;
+      margin  :0 1.7% 0 0;
+      &:last-child{
+        width :15%;
+      }
+    }
+  }
+
+  .jq-selectbox{
+    width      :100%;
+    text-align :left;
+  }
+  span{
+    display   :block;
+    font-size :12px;
+    color     :#6b6b6b;
+    padding   :8px 0;
+  }
+}
+
+.button{
+  display          :inline-block;
+  width            :182px;
+  height           :43px;
+  line-height      :43px;
+  background-color :#000100;
+  background-image :linear-gradient(to top, #dc1301 0%, #e22400 50%, #f3390a 51%, #f65a0d 100%);
+  border           :1px solid white;
+  border-radius    :5px;
+  box-shadow       :0 0 8px #ccc;
+  color            :#fff;
+  font-size        :16px;
+  text-align       :center;
+  text-decoration  :none;
+  &:focus{
+    outline :none;
+  }
+  &.blue{
+    background-image :linear-gradient(to top, #1b689c 0%, #1b689c 49%, #257bae 49%, #257dae 100%);
+  }
+  &.bark{
+    background-image :linear-gradient(to top, #61686e 0%, #616a71 50%, #747d84 51%, #778085 100%);
+  }
+}
+
+.button-more{
+  background-color :#8899a3;
+  font-size        :12px;
+  color            :#fff;
+  position         :relative;
+  text-decoration  :none;
+  display          :inline-block;
+  height           :32px;
+  line-height      :32px;
+  width            :170px;
+  &:before{
+    content    :'';
+    background :url('../images/button-more.png') 0 0 no-repeat;
+    width      :30px;
+    height     :32px;
+    position   :absolute;
+    top        :0;
+    left       :-30px;
+  }
+}
+
+.content-text{
+  margin :0 0 30px;
+  strong{
+    display     :inline-block;
+    font-size   :20px;
+    font-family :$ff-ptr;
+    padding     :24px 0 12px;
+  }
+  p{
+    line-height :1.4;
+  }
+}
+
+.bread-crumbs{
+  position :absolute;
+  top      :18px;
+  left     :60px;
+  li{
+    display    :inline-block;
+    margin     :0 4px 0 0;
+    background :url('../images/bread-crumbs.png') 100% 50% no-repeat;
+    padding    :0 10px 0 0;
+    &:last-child{
+      background-image :none;
+      a{
+        text-decoration :none;
+        cursor          :default;
+      }
+
+    }
+  }
+  a{
+    display :inline-block;
+    color   :lighten($color-text, 29.5%);
+    &:hover{
+      text-decoration :none;
+    }
+  }
+}
+
+.seze-item{
+  width   :1080px;
+  margin  :0 auto;
+  padding :9px 0 60px;
+}
+
+.sort{
+  border-bottom :1px solid #e9e9e9;
+  padding       :19px 0 16px;
+  margin        :0 0 20px;
+}
+
+.jq-checkbox{
+  background-image      :linear-gradient(to top, #f7f7f9 0%, white 100%);
+  border                :1px solid gainsboro;
+  width                 :19px;
+  height                :19px;
+  -webkit-border-radius :2px;
+  -moz-border-radius    :2px;
+  border-radius         :2px;
+  margin                :0 9px 0 0;
+  &.checked{
+    text-align :center;
+    .jq-checkbox__div{
+      background-image      :linear-gradient(to top, #ef4717 0%, #ef4717 0%);
+      box-shadow            :none;
+      width                 :13px;
+      height                :13px;
+      margin                :2px 0 0 0;
+      display               :inline-block;
+      -webkit-border-radius :2px;
+      -moz-border-radius    :2px;
+      border-radius         :2px;
+    }
+  }
+}
+
+.input-ico{
+  position :relative;
+  .jq-checkbox{
+    margin :0 17px 0 0;
+  }
+  &:before{
+    content  :'';
+    display  :inline-block;
+    position :absolute;
+    width    :11px;
+    height   :20px;
+    top      :-2px;
+    left     :21px;
+  }
+}
+
+.input-summe{
+  &:before{
+    background :url('../images/input-summer.png') 0 0 no-repeat;
+  }
+}
+
+.input-winte{
+  &:before{
+    background :url('../images/input-winter.png') 0 0 no-repeat;
+  }
+}
+
+.input-all-season{
+  &:before{
+    background :url('../images/input-all-season.png') 0 0 no-repeat;
+  }
+}
+.input-sh{
+  &:before{
+    background :url('../images/input-sh.png') 0 0 no-repeat;
+    width    : 13px;
+    height   : 17px;
+    top      : 0;
+  }
+}
+.input-sh2{
+  &:before{
+    background :url('../images/input-sh2.png') 0 0 no-repeat;
+    width    : 13px;
+    height   : 17px;
+    top      : 0;
+  }
+}
+
+
+.list-sort{
+  li{
+    display :inline-block;
+    margin  :0 14px;
+  }
+  span{
+
+  }
+
+}
+
+.button-sort{
+  display               :inline-block;
+  border                :1px solid #dedede;
+  background-color      :#fff;
+  padding               :0 5.5px 2px;
+  vertical-align        :top;
+  -webkit-border-radius :2px;
+  -moz-border-radius    :2px;
+  border-radius         :2px;
+  i{
+    @include triangle(7px, lighten($color-text, 29.5%), up);
+    display        :inline-block;
+    vertical-align :top;
+    margin         :7px 0 0;
+  }
+  &.down{
+    i{
+      border-top    :3.5px solid lighten($color-text, 29.5%);
+      border-bottom :3.5px solid transparent;
+    }
+  }
+  &.active{
+    border           :1px solid #de1c03;
+    background-color :#ef4717;
+    &.down{
+      i{
+        border-top    :3.5px solid #fff;
+        border-bottom :3.5px solid transparent;
+      }
+    }
+    i{
+      border-bottom :3.5px solid #fff;
+    }
+  }
+}
+
+.wr-seze{
+  padding :9px 0;
+  .item{
+    position   :relative;
+    min-height :280px;
+    margin     :11px 0;
+    border     :1px solid #c1c1c1;
+    box-shadow :inset 0 0 25px #f2f2f2;
+    .title{
+      margin :0;
+      a{
+        display          :inline-block;
+        font-family      :$ff-ptr;
+        font-size        :14px;
+        background-color :#d9e4ea;
+        height           :41px;
+        padding          :10px;
+        color            :$color-text;
+        text-decoration  :none;
+        position         :relative;
+
+        &:before{
+          content    :'';
+          background :url('../images/title-item5.png') 0 0 no-repeat;
+          width      :33px;
+          height     :41px;
+          position   :absolute;
+          top        :0;
+          left       :-33px;
+        }
+        &:after{
+          content    :'';
+          background :url('../images/title-item51.png') 0 0 no-repeat;
+          width      :32px;
+          height     :41px;
+          position   :absolute;
+          top        :0;
+          right      :-32px;
+        }
+        &:hover{
+          background-color :$color-astsent;
+          color            :#fff;
+          &:before{
+            background-image :url('../images/title-item5-hover.png');
+
+          }
+          &:after{
+            background-image :url('../images/title-item51-hover.png');
+
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.brand-item{
+  .item{
+    width          :520px;
+    text-align     :center;
+    position       :relative;
+    padding-bottom :40px;
+    margin-bottom  :30px;
+    img{
+      margin :21px 0 0 25px;
+    }
+    .content{
+      padding :28px 0 15px;
+      margin  :0 0 0 36px;
+      width   :310px;
+      p{
+        text-align  :left;
+        line-height :1.4;
+        a{
+          color :$color-astsent;
+        }
+      }
+      .numb-disk{
+        margin-top :30px;
+        a{
+          margin :0 5px 0 0;
+        }
+      }
+    }
+  }
+}
+
+.print-mini{
+  color            :#fff;
+  background-color :#8899a3;
+  padding          :3px 10px;
+  position         :absolute;
+  bottom           :0;
+  right            :0;
+
+  b{
+
+  }
+}
+
+.numb-disk{
+  a{
+    margin :0 5px;
+  }
+}
+
+.title-h-mini{
+  font-size   :20px;
+  font-family :$ff-ptr;
+  display     :block;
+  font-weight :normal;
+  text-align  :left;
+  margin      :0 0 12px;
+}
+
+.wr-desc{
+  padding :11px 0;
+}
+
+.tov-img{
+  position       :relative;
+  border-right   :1px solid #c2c2c2;
+  width          :230px;
+  height         :200px;
+  text-align     :center;
+  vertical-align :middle;
+  &:hover{
+    .lupa{
+      -webkit-transform :scale(1, 1);
+      -moz-transform    :scale(1, 1);
+      -ms-transform     :scale(1, 1);
+      -o-transform      :scale(1, 1);
+      transform         :scale(1, 1);
+      opacity           :1;
+    }
+  }
+}
+
+.lupa{
+  position                 :absolute;
+  top                      :0;
+  left                     :0;
+  bottom                   :0;
+  right                    :0;
+  background               :rgba(255, 255, 255, 0.6) url('../images/lupa.png') 50% 50% no-repeat;
+  -webkit-transform        :scale(0.5, 0.5);
+  -moz-transform           :scale(0.5, 0.5);
+  -ms-transform            :scale(0.5, 0.5);
+  -o-transform             :scale(0.5, 0.5);
+  transform                :scale(0.5, 0.5);
+  -moz-transition-duration :400ms;
+  -ms-transition-duration  :400ms;
+  -o-transition-duration   :400ms;
+  transition-duration      :400ms;
+  opacity                  :0;
+}
+
+.tov-description{
+  width  :213px;
+  margin :24px 0 0 30px;
+}
+
+.top-desc{
+  text-align :left;
+  li{
+    display        :inline-block;
+    vertical-align :middle;
+    height         :23px;
+    margin         :0 3px;
+    i{
+    }
+    a{
+      color          :#f14106;
+      font-size      :12px;
+      vertical-align :top;
+    }
+  }
+}
+
+.cont-desc{
+  text-align :left;
+  margin     :13px 0;
+  li{
+    font-size  :12px;
+    padding    :5px 0;
+    background :url('../images/cont-desc.png') 0 50% repeat-x;
+  }
+  b{
+    background-color :#fff;
+    display          :inline-block;
+    padding          :0 3px;
+  }
+  span{
+    background-color :#fff;
+    display          :inline-block;
+    padding          :0 3px;
+    float            :right;
+  }
+}
+
+.tov-calculator{
+  width   :517px;
+  padding :20px 0 0;
+}
+
+.calculator{
+  li{
+    display        :inline-block;
+    vertical-align :top;
+    i{
+      margin :20px 15px 0;
+    }
+    .old-price{
+      i{
+        margin :0;
+      }
+    }
+    &:first-child{
+      text-align :right;
+    }
+  }
+}
+
+.valuta{
+  display :block;
+  &.big{
+    font-size   :40px;
+    font-family :$ff-ptb;
+    background  :url('../images/valuta-big.png') 100% 68% no-repeat;
+    padding     :0 25px 0 0;
+    line-height :41px;
+  }
+}
+
+.old-price{
+  color       :#a6a4a5;
+  font-size   :20px;
+  font-family :$ff-ptr;
+  display     :inline-block;
+  position    :relative;
+  &:before{
+    content          :'';
+    display          :inline-block;
+    height           :2px;
+    background-color :#d2d1d2;
+    width            :100%;
+    position         :absolute;
+    top              :50%;
+    left             :0;
+  }
+  i{
+    margin :0;
+  }
+}
+
+.val-mini{
+  display    :inline-block;
+  background :url('../images/valuta-mini.png') 0 0 no-repeat;
+  width      :14px;
+  height     :14px;
+}
+
+.jq-number{
+  width            :113px;
+  padding          :0;
+  background-color :#000100;
+  background-image :linear-gradient(to top, #f7f7f9 0%, white 100%);
+  border           :1px solid gainsboro;
+  border-radius    :5px;
+}
+
+.jq-number__field{
+  width         :45px;
+  margin        :0 auto;
+  height        :43px;
+  border        :none;
+  border-radius :0;
+  box-shadow    :none;
+  border-left   :1px solid gainsboro;
+  border-right  :1px solid gainsboro;
+  text-align    :center;
+  input{
+    line-height :43px;
+    padding     :0 5px;
+    text-align  :center;
+    &:focus{
+      outline :none;
+    }
+  }
+}
+
+.jq-number__spin{
+  background            :none;
+  border                :none;
+  -webkit-box-shadow    :none;
+  -moz-box-shadow       :none;
+  box-shadow            :none;
+  -webkit-border-radius :0;
+  -moz-border-radius    :0;
+  border-radius         :0;
+  height                :41px;
+  width                 :33px;
+  &:after{
+    display :none;
+  }
+  &.minus{
+    background :url('../images/minus.png') 50% 0 no-repeat;
+    left       :0;
+    &:hover{
+      background-image :url('../images/minus-hover.png');
+    }
+  }
+  &.plus{
+    background :url('../images/plus.png') 50% 0 no-repeat;
+    right      :0;
+    &:hover{
+      background-image :url('../images/plus-hover.png');
+    }
+  }
+  &:focus,
+  &:active{
+    outline            :none;
+    -webkit-box-shadow :none;
+    -moz-box-shadow    :none;
+    box-shadow         :none;
+  }
+
+}
+
+.availability{
+  display     :block;
+  text-align  :center;
+  padding     :3px 0;
+  font-family :$ff-ptr;
+  font-size   :12px;
+}
+
+.summa{
+  background  :url('../images/valuta-big.png') 100% 68% no-repeat;
+  padding     :0 25px 0 0;
+  font-family :$ff-ptb;
+  font-size   :30px;
+}
+
+.box-button{
+  position :absolute;
+  right    :0;
+  bottom   :0;
+  width    :200px;
+  height   :150px;
+  padding  :0 20px 40px;
+  .button{
+    margin :3px 0;
+    width  :100%;
+  }
+  .button-more{
+    position :absolute;
+    bottom   :0;
+    right    :0;
+  }
+}
+
+.hits{
+  position :absolute;
+  top      :0;
+  left     :-1px;
+  z-index  :9;
+}
+
+.leb-stock{
+  background :url('../images/leb-stock.png') 0 0 no-repeat;
+  width      :101px;
+  height     :100px;
+}
+
+.leb-hit{
+  background :url('../images/leb-hit.png') 0 0 no-repeat;
+  width      :101px;
+  height     :100px;
+}
+
+.m-bootom{
+  margin-bottom :30px;
+}
+
+.catalog-item{
+  padding :59px;
+}
+
+.catalog-slid{
+  width      :510px;
+  min-height :465px;
+}
+
+//СЛАЙДЕР
+#images, #thumbs{
+  float    :left;
+  overflow :hidden;
+}
+
+#thumbs img{
+  margin :5px;
+  cursor :pointer;
+}
+
+#thumbs img.selected, #thumbs img:hover{
+  border-color :#333;
+}
+
+#thumbs div{
+  width  :200px;
+  height :350px;
+  float  :left;
+}
+
+//\СЛАЙДЕР\
+
+// TABS
+.wr-tabs{
+  width   :560px;
+  padding :5px 0;
+}
+
+.tabs{
+  background-color :#fff;
+  border           :1px solid #c1c1c1;
+  box-shadow       :inset 0 0 35px #f2f2f2;
+  min-height       :430px;
+  div{
+    text-align :left;
+    strong{
+      font-family :$ff-ptr;
+      font-size   :18px;
+      display     :inline-block;
+      margin      :18px 29px 6px;
+    }
+  }
+
+}
+
+.rating{
+  margin :0 30px;
+  li{
+    display :inline-block;
+  }
+  span{
+
+  }
+}
+
+.content-tab{
+  padding :20px 30px;
+  p{
+    margin :10px 0 16px;
+  }
+}
+
+.nav-tabs{
+  background :#d9e4ea url('../images/tab-laste.png') 100% 0 no-repeat;
+  padding    :0 30px 0 0;
+  margin     :-1px;
+  li{
+    display :inline-block;
+    &:first-child{
+      a{
+        background :url('../images/tab-last.png') 0 0 no-repeat;
+      }
+    }
+    &.active{
+      a{
+        font-weight :bold;
+      }
+    }
+  }
+  a{
+    background      :url('../images/tab.png') 0 -3px no-repeat;
+    display         :inline-block;
+    padding         :12px 0;
+    width           :68px;
+    text-align      :right;
+    font-family     :$ff-ptr;
+    font-size       :14px;
+    text-transform  :uppercase;
+    color           :$color-text;
+    text-decoration :none;
+  }
+}
+
+// \TABS\
+
+// castum-table
+
+.wr-castum-table{
+  margin  :36px 0;
+  padding :0 58px;
+  .add-review{
+    text-align :left;
+    border     :none;
+    margin-top :30px;
+  }
+}
+
+.castum-table{
+  width :100%;
+  .img{
+    position :relative;
+    top      :-2px;
+    left     :-2px;
+    padding  :10px 0 0;
+    img{
+
+    }
+  }
+  a{
+    font-size :12px;
+    color     :$color-astsent;
+    &:hover{
+      text-decoration :none;
+    }
+  }
+  .price-min{
+    background  :url('../images/price-min.png') 100% 50% no-repeat;
+    display     :inline-block;
+    padding     :0 15px 0 0;
+    font-size   :20px;
+    font-family :$ff-ptb;
+  }
+  .button{
+    width   :48%;
+    padding :0 21px;
+    color   :#fff;
+  }
+  tr{
+    background-color :white;
+    border-bottom    :1px solid #c1c1c1;
+    border-radius    :5px;
+    //box-shadow       :inset 0 0 35px #f2f2f2;
+    td{
+      &:nth-child(3){
+        text-align :left;
+        padding    :0 0 0 20px;
+      }
+    }
+  }
+  th{
+    background-color :#d9e4ea;
+    padding          :11px 0;
+  }
+  td{
+    height :70px;
+    i{
+      margin         :0 3px;
+      vertical-align :middle;
+    }
+  }
+  thead{
+    tr{
+      border-radius :2px;
+    }
+    th{
+      background-color :#49565e;
+      color            :#fff;
+      padding          :11px 0;
+      &:nth-child(3){
+        text-align :left;
+        padding    :0 0 0 20px;
+      }
+    }
+  }
+  tfoot{
+    tr{
+      text-align  :right;
+      font-family :$ff-ptr;
+      font-size   :14px;
+      border      :none;
+      border-top  :2px solid #49565e;
+    }
+    td{
+      height :50px;
+      span{
+        font-family :$ff-ptb;
+        color       :#1c689a;
+        font-size   :16px;
+      }
+    }
+  }
+}
+
+.leb-stock-min{
+  background :url('../images/leb-stock-min.png') 0 0 no-repeat;
+  position   :absolute;
+  top        :0;
+  left       :0;
+  width      :64px;
+  height     :57px;
+}
+
+.leb-hit-min{
+  background :url('../images/leb-hit-min.png') 0 0 no-repeat;
+  position   :absolute;
+  top        :0;
+  left       :0;
+  width      :64px;
+  height     :61px;
+}
+
+// \castum-table\
+
+.box-reviews{
+  text-align :left;
+  padding    :48px 58px 0;
+  .item{
+    margin :0 0 32px;
+    .content{
+      padding :0 0 0 34px;
+    }
+
+  }
+}
+
+.add-review{
+  border-top :1px solid #dcdcdc;
+  padding    :23px 0;
+  strong{
+    text-align  :center;
+    font-family :$ff-ptr;
+    font-size   :18px;
+    display     :block;
+    margin      :0 0 22px;
+  }
+}
+
+.list-review{
+  label{
+    clear          :both;
+    content        :"";
+    display        :block;
+    float          :none;
+    margin         :0;
+    padding        :0;
+    height         :43px;
+    margin         :8px 0;
+    vertical-align :middle;
+    sup{
+      color :red;
+    }
+  }
+  b{
+    display :inline-block;
+    width   :180px;
+  }
+  input{
+    width :360px;
+  }
+  span{
+    display :inline-block;
+    img{
+      vertical-align :middle;
+      width          :125px;
+      height         :43px;
+    }
+  }
+  .captcha-input{
+    width :115px;
+  }
+
+}
+
+input{
+  line-height      :40px;
+  height           :40px;
+  background-color :#000100;
+  background-image :linear-gradient(to top, #f7f7f9 0%, white 100%);
+  border           :1px solid gainsboro;
+  border-radius    :5px;
+  padding          :0 10px;
+  &:focus{
+    outline :1px solid $color-astsent;
+  }
+}
+
+textarea{
+  background-color :#000100;
+  background-image :linear-gradient(to top, #f7f7f9 0%, white 100%);
+  border           :1px solid gainsboro;
+  border-radius    :5px;
+  padding          :16px;
+  resize           :none;
+  width            :100%;
+  &:focus{
+    outline :1px solid $color-astsent;
+  }
+}
+
+.form-castum{
+  textarea{
+    height :143px;
+    margin :0 0 9px;
+  }
+  .jq-selectbox{
+    width :360px;
+  }
+}
+
+.box-textar{
+  width   :525px;
+  padding :10px 0;
+  .rating{
+    margin :10px 0 0;
+  }
+}
+
+.checkout{
+
+}
+
+.title-h{
+  display     :block;
+  text-align  :center;
+  font-size   :18px;
+  font-family :$ff-ptr;
+  margin      :20px 0;
+}
+
+.nth_child{
+  tr{
+    td{
+      &:nth-child(2){
+        text-align :left;
+      }
+
+    }
+  }
+}
+
+.remove{
+
+}
+
+.button-remove{
+  text-decoration :none;
+  color           :#f50500;
+  vertical-align  :middle;
+  i{
+    vertical-align :middle;
+    margin         :-2px 3px 0 !important;
+  }
+}
+
+.br-center{
+  text-align :center;
+  display    :block;
+  border-top :1px solid #dcdcdc;
+  padding    :20px 0 0;
+  margin     :30px 0 0;
+}
+
+
+.brands{
+  padding: 34px 55px 0;
+
+}
+
+.h-min{
+  font-family :$ff-ptr;
+  text-transform :uppercase;
+  font-size :14px;
+  display :block;
+  margin: 17px 0 8px;
+}
+.print-ot{
+  
+  label{
+    background-color: #000100;
+    background-image: linear-gradient(to top, #f7f7f9 0%, white 100%);
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    line-height: 40px;
+    padding :0 10px;
+    display :inline-block;
+    width :48%;
+    input{
+      max-width :90px;
+      background-image: none;
+      background-color: transparent;
+      border :none;
+      box-shadow:none;
+      &:focus{
+        outline :none;
+      }
+    }
+  }
+}
+
+
+
+.sezone{
+  label{
+    width :48%;
+    display :inline-block;
+    margin :0 0 7px;
+  }
+}
+
+.sort-select{
+  .jq-selectbox{
+    width :100%;
+    margin :9px 0 0;
+  }
+}
+
+
+.wr-buuton{
+  text-align :center;
+  border-top :1px solid #c1c1c1;
+  padding: 15px 0;
+  margin: 13px 0 0;
+}
+
+
+
+
+
+.disk-form-v{
+  &:before{
+    content    :'';
+    position   :absolute;
+    top        :-16px;
+    left       :-238px;
+    display    :inline-block;
+    background :url('../images/disk-item1.jpg') no-repeat 0 0;
+    width      :243px;
+    height     :199px;
+
+  }
+
+  &:after{
+    content    :'';
+    position   :absolute;
+    top        :-50px;
+    left       :578px;
+    display    :inline-block;
+    background :url('../images/disk-item2.jpg') no-repeat 0 0;
+    width      :209px;
+    height     :243px;
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+  // FOOTER
+  .footer-content{
+    background-color :#f7f7f9;
+    padding          :28px 59px;
+    font-size        :12px;
+  }
+
+  .footer-nav{
+    width :541px;
+    ul{
+      float :left;
+      width :145px;
+    }
+    li{
+      margin :7px 0;
+    }
+    span{
+      font-family :$ff-ptr;
+      font-size   :16px;
+      padding     :5px 0;
+      display     :inline-block;
+    }
+    a{
+      color :$color-text;
+      &:hover{
+        text-decoration :none;
+      }
+    }
+  }
+
+  .footer-phone{
+    width :355px;
+    span{
+      font-family :$ff-ptb;
+      font-size   :24px;
+      color       :$color-astsent;
+      display     :inline-block;
+      padding     :10px 0 0;
+    }
+    p{
+      margin :3px 0;
+    }
+  }
+
+  .footer-adress{
+    padding :34px 0 0;
+    p{
+
+    }
+  }
+
+  .copyrite{
+    background-color :#e4e4e4;
+    text-align       :center;
+    padding          :10px 13px;
+    line-height      :18px;
+  }
+
+  .met{
+    margin :-53px 0;
+    li{
+      display :inline-block;
+      margin  :0 0 0 7px;
+    }
+  }
+
+  // \FOOTER\
+  // \КОНТЕНТ\
+
+  /*************************
+  *     КАСТОМНЫЕ СТИЛИ
+  **************************/
+
+  @import "partials/media";
