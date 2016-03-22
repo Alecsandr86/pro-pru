@@ -709,7 +709,7 @@ body{
 
 
 .tabs-shem{
-  
+  min-height: 270px;
 }
 .tabs-shem-nav{
   li{
@@ -727,13 +727,47 @@ body{
     width :100%;
     background-color :#d9e4ea;
     text-align :center;
-    padding :3px;
+    padding :4px;
     text-decoration :none;
     @include transition(all 0.5s $ease-out-cubic);
   }
 }
 .tabs-shem-cont{
   padding :10px;
+  width :100%;
+  img{
+    width :100%;
+  }
   
 }
+.select-r-v,
+.select-l-v{
+  width :100%;
+  padding :0 10px;
+}
+
+.disk-but-v{
+  border :none;
+  padding :0 10px;
+  margin :20px 0 32px;
+  a{
+    width :100%;
+  }
+}
+
+.brand-v {
+  width :100%;
+  padding :20px 10px;
+  margin :0;
+  text-align: left;
+  ul{
+    li{
+      width :48%;
+      margin :5px 0;
+    }
+  }
+
+}
+
+
 
