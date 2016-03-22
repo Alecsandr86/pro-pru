@@ -784,3 +784,36 @@ body{
     width: 100%;
   }
 }
+.cooper-box {
+  padding: 0 10px;
+}
+
+.brand-item {
+  .item {
+    width: 100%;
+  }
+}
+.wr-seze {
+  .item{
+    min-height :100%;
+  }
+  .button-more {
+    right: 0;
+  }
+}
+
+.brand-item {
+  .item {
+    .content {
+      margin: 0 ; 
+      width: 100%;
+      padding: 0 0 50px;
+      .numb-disk {
+        margin-top: 20px;
+      }
+    }
+    img {
+      margin: 21px 0 0;
+    }
+  }
+}
