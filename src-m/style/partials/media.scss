@@ -494,6 +494,206 @@ body{
 
 
 
+.catalog-item{
+  padding :10px;
+}
+
+.catalog-slid {
+  width: 100%;
+  min-height: 100%;
+}
+
+#thumbs {
+  width :100% !important;
+  div{
+    width :100% !important;
+  }
+  img{
+    margin: 5px 3px;
+  }
+}
+
+.wr-tabs{
+  width :100%;
+}
+
+.nav-tabs{
+  a {
+    width: 62px;
+    padding :11px 0;
+  }
+
+}
+.box-reviews {
+  padding: 48px 10px 0;
+}
+
+.list-review{
+  label{
+    height :100%;
+  }
+  input,
+  textarea{
+    width :100%;
+  }
+}
+.box-textar{
+  width :100%;
+  text-align :center; 
+  .rating{
+    margin :10px 0;
+  }
+  input[type=submit]{
+    width :100%;
+  }
+ 
+}
+.form-castum {
+  textarea {
+  }
+}
+
+
+.wr-castum-table {
+  margin: 0;
+  padding: 0 10px;
+}
+
+.mob-table{
+  padding :14px 0;
+}
+.tabl-header{
+  background-color :#49565e;
+  color :#fff;
+  -webkit-border-radius :2px;
+  -moz-border-radius    :2px;
+  border-radius         :2px;
+
+  ul{
+    border-bottom :1px solid #fff;
+    padding: 8px 15px;
+    text-align :left;
+    &:last-child{
+      border :none;
+    }
+    li{
+      display :inline-block;
+      padding :0 25px 0 0;
+      font-weight :bold;
+      &:last-child{
+        padding :0;
+      }
+    }
+  }
+}
+.tabl-title{
+  background-color :#d9e4ea;
+  -webkit-border-radius :2px;
+  -moz-border-radius    :2px;
+  border-radius         :2px;
+  padding :9px;
+  strong{
+    font-family :$ff-ptb;
+    font-size :16px;
+  }
+}
+
+.mob-table{
+
+  .tabl-content{
+    &:last-child{
+      .tabl-item{
+        border :none;
+      }
+    }
+
+  }
+
+}
+
+.tabl-content{
+  
+  .tabl-item{
+    text-align :left;
+    padding :0 0 10px;
+    border-bottom :1px solid #49565e;
+  
+  }
+    a{
+      font-size :12px;
+      color :$color-astsent;
+      padding :0 4px 0 0;
+    }
+    .availability{
+      display :inline-block;
+      min-width :80px;
+      text-align :right;
+      font-family :$arial;
+      font-weight :bold;
+    }
+    .price-min{
+      width :80px;
+      text-align :right;
+    }
+    .spid{
+      display :inline-block;
+      width :120px;
+      padding :0 0 0 9px;
+    }
+
+
+
+
+}
+
+.price-min{
+  background  :url('../images/price-min.png') 100% 50% no-repeat;
+  display     :inline-block;
+  padding     :0 15px 0 0;
+  font-size   :20px;
+  font-family :$ff-ptb;
+}
+
+.button-tabl{
+  .button{
+    color :#fff;
+    width :48%;
+  }
+}
+
+.img-cont{
+  .img{
+    width :75px;
+    height :71px;
+    text-align :center;
+    position :relative;
+    padding :20px 0 0;
+    img{
+      
+    }
+  }
+  p{
+    padding :28px 0 0 75px;
+    margin :0;
+  }
+}
+
+.pr-mob-tab{
+  padding :20px 0;
+  ul{
+
+  }
+  li{
+    position :relative;
+    display  :inline-block;
+    padding  :0 16px 0 0;
+    margin   :0 0 10px;
+    &:last-child{
+      padding :0;
+    }
+  }
+}
+
 
 
 
