@@ -603,7 +603,10 @@ body{
   .tabl-content{
     &:last-child{
       .tabl-item{
-        border :none;
+        &:last-child{
+          border :none;
+        }
+       
       }
     }
 
@@ -645,6 +648,25 @@ body{
 
 
 }
+.tabl-footer{
+  border-top : 1px solid #49565e;
+  p{
+    text-align :center;
+    font-size :14px;
+    font-family :$ff-ptr;
+    padding :20px 0;
+    margin :0;
+    span{
+      font-size :16px;
+      color :#1c689a;
+      font-family :$ff-ptb;
+  
+    }
+  }
+}
+
+
+
 
 .price-min{
   background  :url('../images/price-min.png') 100% 50% no-repeat;
@@ -688,6 +710,9 @@ body{
     display  :inline-block;
     padding  :0 16px 0 0;
     margin   :0 0 10px;
+    b{
+      font-size :14px;
+    }
     &:last-child{
       padding :0;
     }
@@ -817,3 +842,41 @@ body{
     }
   }
 }
+
+.tec{
+  text-align :center!important;
+}
+
+
+.remove-mob{
+  display :inline-block;
+}
+
+.wr-castum-table {
+  .add-review {
+    margin-top: 0;
+    padding :0;
+  }
+}
+.form-castum {
+  .jq-selectbox {
+    width: 100%;
+  }
+}
+
+
+.br-center {
+  padding: 20px 0;
+  margin: 0;
+  .button{
+    width :100%;
+  }
+}
+
+
+
+
+
+
+
+
