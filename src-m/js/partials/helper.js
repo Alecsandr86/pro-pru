@@ -97,7 +97,7 @@ $(document).ready(function(){
 
     // TABSELET
     
-        $('.tabs').tabslet({
+        $('.tabs,.tabs-shem').tabslet({
             animation: true
         });
     

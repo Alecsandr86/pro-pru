@@ -698,4 +698,42 @@ body{
 
 
 
+.disk-form-v{
+  width :100%;
+  margin :0;
+  &:before,
+  &:after{
+    display :none;
+  }
+}
+
+
+.tabs-shem{
+  
+}
+.tabs-shem-nav{
+  li{
+    width :48%;
+    display :inline-block;
+    &.active{
+      a{
+        color :#fff;
+        background-color :#49565e;
+      }
+    }
+  }
+  a{
+    display :inline-block;
+    width :100%;
+    background-color :#d9e4ea;
+    text-align :center;
+    padding :3px;
+    text-decoration :none;
+    @include transition(all 0.5s $ease-out-cubic);
+  }
+}
+.tabs-shem-cont{
+  padding :10px;
+  
+}
 
